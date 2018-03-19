@@ -22,12 +22,18 @@ class Welcome extends CI_Controller {
 	
 	public function index()
 	{
-		$this->mytemplate->loadAmin('home');
+//		$this->mytemplate->loadAmin('home');
+        $this->load->view('login');
 	}
 	
 	public function newpage()
 	{
 		$this->mytemplate->loadAmin('testpage');
 	}
+
+    public function dashboard()
+    {
+        $this->mytemplate->loadAmin('dashboard');
+    }
 	
 }

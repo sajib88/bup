@@ -7,7 +7,9 @@
     <title>Espire - Bootstrap 4 Admin Template</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo/favicon.png">
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
     <!-- plugins css -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -24,6 +26,8 @@
     <link href="<?php echo base_url(); ?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/css/animate.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/css/app.css" rel="stylesheet">
+
+    <link href="<?php echo base_url(); ?>assets/css/custome.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,8 +38,9 @@
                 <div class="side-nav-inner">
                     <div class="side-nav-logo">
                         <a href="index.html">
-                            <div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
-                            <div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
+
+                            <div class="logo logo-dark" style="background-image: url('<?php echo base_url(); ?>/assets/images/logo/logo.png')"></div>
+                            <div class="logo logo-white" style="background-image: url('<?php echo base_url(); ?>/assets/images/logo/logo-white.png')"></div>
                         </a>
                         <div class="mobile-toggle side-nav-toggle">
                             <a href="">
@@ -52,221 +57,61 @@
                                 <span class="title">Dashboard</span>
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
+                        <li class="nav-item">
+                            <a class="" href="#">
                                 <span class="icon-holder">
-										<i class="ti-package"></i>
+										<i class="ti-upload"></i>
 									</span>
-                                <span class="title">Apps</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
+                                <span class="title">Upload</span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="email.html">Email</a>
-                                </li>
-                                <li>
-                                    <a href="calendar.html">Calendar</a>
-                                </li>
-                                <li>
-                                    <a href="social.html">Social</a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
+                        <li class="nav-item">
+                            <a class="" href="#">
                                 <span class="icon-holder">
-										<i class="ti-palette"></i>
+										<i class="ti-search"></i>
 									</span>
-                                <span class="title">UI Elements</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
+                                <span class="title">Search Result</span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="cards.html">Cards</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="modals.html">Modals</a>
-                                </li>
-                                <li>
-                                    <a href="tabs.html">Tabs &amp; Accordions</a>
-                                </li>
-                                <li>
-                                    <a href="progress-slider.html">Progress &amp; Slider</a>
-                                </li>
-                                <li>
-                                    <a href="notification.html">Notification</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html">Icons</a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
+                        <li class="nav-item">
+                            <a class="" href="#">
                                 <span class="icon-holder">
-										<i class="ti-file"></i>
+										<i class="ti-target"></i>
 									</span>
-                                <span class="title">Forms</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
+                                <span class="title">Advanced Search</span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="form-elements.html">Form Elements</a>
-                                </li>
-                                <li>
-                                    <a href="form-layouts.html">Form Layouts</a>
-                                </li>
-                                <li>
-                                    <a href="form-wizard.html">Form Wizard</a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
+                        <li class="nav-item">
+                            <a class="" href="#">
                                 <span class="icon-holder">
-										<i class="ti-layout-media-overlay"></i>
+										<i class="ti-help"></i>
 									</span>
-                                <span class="title">Tables</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
+                                <span class="title">Help</span>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="basic-table.html">Basic Table</a>
-                                </li>
-                                <li>
-                                    <a href="data-table.html">Data Table</a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
-                                <span class="icon-holder">
-										<i class="ti-pie-chart"></i>
-									</span>
-                                <span class="title">Charts</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="nvd3.html">Nvd3</a>
-                                </li>
-                                <li>
-                                    <a href="chartjs.html">ChartJs</a>
-                                </li>
-                                <li>
-                                    <a href="sparkline.html">Sparkline</a>
-                                </li>
-                                <li>
-                                    <a href="rickshaw.html">Ricksaw</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
-                                <span class="icon-holder">
-										<i class="ti-map-alt"></i>
-									</span>
-                                <span class="title">Map</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="google-map.html">Google Map</a>
-                                </li>
-                                <li>
-                                    <a href="vector-map.html">Vector Map</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
-                                <span class="icon-holder">
-										<i class="ti-cloud"></i>
-									</span>
-                                <span class="title">Extra</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="invoice.html">Invoice</a>
-                                </li>
-                                <li>
-                                    <a href="account.html">Account Settings</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="gallery.html">Gallery</a>
-                                </li>
-                                <li>
-                                    <a href="sign-in.html">Sign In</a>
-                                </li>
-                                <li>
-                                    <a href="sign-in2.html">Sign In 2</a>
-                                </li>
-                                <li>
-                                    <a href="sign-up.html">Sign Up</a>
-                                </li>
-                                <li>
-                                    <a href="404.html">404</a>
-                                </li>
-                                <li>
-                                    <a href="500.html">500</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="javascript:void(0);">
-                                <span class="icon-holder">
-										<i class="ti-view-list-alt"></i>
-									</span>
-                                <span class="title">Multiple Levels</span>
-                                <span class="arrow">
-										<i class="ti-angle-right"></i>
-									</span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item dropdown">
-                                    <a href="javascript:void(0);">
-                                        <span>Level 1.2</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a href="javascript:void(0);">
-                                        <span>Level 1.1</span>
-                                        <span class="arrow">
-												<i class="ti-angle-right"></i>
-											</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="javascript:void(0);">Level 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+
+<!--                        <li class="nav-item dropdown">-->
+<!--                            <a class="dropdown-toggle" href="javascript:void(0);">-->
+<!--                                <span class="icon-holder">-->
+<!--										<i class="ti-package"></i>-->
+<!--									</span>-->
+<!--                                <span class="title">Apps</span>-->
+<!--                                <span class="arrow">-->
+<!--										<i class="ti-angle-right"></i>-->
+<!--									</span>-->
+<!--                            </a>-->
+<!--                            <ul class="dropdown-menu">-->
+<!--                                <li>-->
+<!--                                    <a href="email.html">Email</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="calendar.html">Calendar</a>-->
+<!--                                </li>-->
+<!--                                <li>-->
+<!--                                    <a href="social.html">Social</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </li>-->
                     </ul>
                 </div>
             </div>
@@ -301,7 +146,7 @@
                                             <ul class="list-unstyled list-info">
                                                 <li>
                                                     <a href="">
-                                                        <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-1.jpg'); ?>" alt="">
                                                         <div class="info">
                                                             <span class="title">Jordan Hurst</span>
                                                             <span class="sub-title">
@@ -313,7 +158,7 @@
                                                 </li>
                                                 <li>
                                                     <a href="">
-                                                        <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-5.jpg'); ?>" alt="">
                                                         <div class="info">
                                                             <span class="title">Jennifer Watkins</span>
                                                             <span class="sub-title">
@@ -325,7 +170,7 @@
                                                 </li>
                                                 <li>
                                                     <a href="">
-                                                        <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                        <img class="thumb-img" src="<?php echo base_url(); ?>assets/images/avatars/thumb-4.jpg" alt="">
                                                         <div class="info">
                                                             <span class="title">Michael Birch</span>
                                                             <span class="sub-title">
@@ -346,7 +191,7 @@
                                             <ul class="list-unstyled list-info">
                                                 <li>
                                                     <a href="">
-                                                        <img class="thumb-img" src="assets/images/img-1.jpg" alt="">
+                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/img-1.jpg'); ?>" alt="">
                                                         <div class="info">
                                                             <span class="title">Artoo expresses his relief</span>
                                                             <span class="sub-title">
@@ -357,7 +202,92 @@
                                                 </li>
                                                 <li>
                                                     <a href="">
-                                                        <img class="thumb-img" src="assets/images/img-2.jpg" alt="">
+                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/img-2.jpg'); ?>" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Ready for some power?</span>
+                                                            <span class="sub-title">
+																	<span>Lord Vader. You may take Caption So...</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="search-footer">
+                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="search-input">
+                                <input class="form-control" type="text" placeholder="Advanced Search...">
+                                <div class="advanced-search">
+                                    <div class="search-wrapper">
+                                        <div class="pdd-vertical-10">
+                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
+													<i class="ti-user pdd-right-5"></i>
+													<span>People</span>
+                                            </span>
+                                            <ul class="list-unstyled list-info">
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-1.jpg'); ?>" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Jordan Hurst</span>
+                                                            <span class="sub-title">
+																	<i class="ti-location-pin"></i>
+																	<span>44 Shirley Ave. West Chicago</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-5.jpg'); ?>" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Jennifer Watkins</span>
+                                                            <span class="sub-title">
+																	<i class="ti-location-pin"></i>
+																	<span>514 S. Magnolia St. Orlando</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="<?php echo base_url(); ?>assets/images/avatars/thumb-4.jpg" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Michael Birch</span>
+                                                            <span class="sub-title">
+																	<i class="ti-location-pin"></i>
+																	<span>70 Bowman St. South Windsor</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mrg-horizon-20 border top"></div>
+                                        <div class="pdd-vertical-10">
+                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
+													<i class="ti-rss pdd-right-5"></i>
+													<span>Post</span>
+                                            </span>
+                                            <ul class="list-unstyled list-info">
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/img-1.jpg'); ?>" alt="">
+                                                        <div class="info">
+                                                            <span class="title">Artoo expresses his relief</span>
+                                                            <span class="sub-title">
+																	<span>Oh, thank goodness we're coming out...</span>
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/img-2.jpg'); ?>" alt="">
                                                         <div class="info">
                                                             <span class="title">Ready for some power?</span>
                                                             <span class="sub-title">
@@ -378,7 +308,7 @@
                         <ul class="nav-right">
                             <li class="user-profile dropdown">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img class="profile-img img-fluid" src="assets/images/user.jpg" alt="">
+                                    <img class="profile-img img-fluid" src="<?php echo base_url('assets/images/user.jpg'); ?>" alt="">
                                     <div class="user-info">
                                         <span class="name pdd-right-5">Nate Leong</span>
                                         <i class="ti-angle-down font-size-10"></i>
@@ -391,18 +321,18 @@
                                             <span>Setting</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="ti-user pdd-right-10"></i>
-                                            <span>Profile</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <i class="ti-email pdd-right-10"></i>
-                                            <span>Inbox</span>
-                                        </a>
-                                    </li>
+<!--                                    <li>-->
+<!--                                        <a href="">-->
+<!--                                            <i class="ti-user pdd-right-10"></i>-->
+<!--                                            <span>Profile</span>-->
+<!--                                        </a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="">-->
+<!--                                            <i class="ti-email pdd-right-10"></i>-->
+<!--                                            <span>Inbox</span>-->
+<!--                                        </a>-->
+<!--                                    </li>-->
                                     <li role="separator" class="divider"></li>
                                     <li>
                                         <a href="">
@@ -412,99 +342,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="notifications dropdown">
-                                <span class="counter">2</span>
-                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="ti-bell"></i>
-                                </a>
 
-                                <ul class="dropdown-menu ">
-                                    <li class="notice-header">
-                                        <i class="ti-bell pdd-right-10"></i>
-                                        <span>Notifications</span>
-                                    </li>
-                                    <li>
-                                        <ul class="list-info overflow-y-auto relative scrollable">
-                                            <li>
-                                                <a href="">
-                                                    <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Jennifer Watkins</span>
-                                                        <span class="text-gray">commented on your <span class="text-dark">post</span></span>
-                                                        </span>
-                                                        <span class="sub-title">5 mins ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Samuel Field</span>
-                                                        <span class="text-gray">likes your <span class="text-dark">photo</span></span>
-                                                        </span>
-                                                        <span class="sub-title">8 hours ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="thumb-img bg-primary">
-															<span class="text-white">M</span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Michael Birch</span>
-                                                        <span class="text-gray">likes your <span class="text-dark">photo</span></span>
-                                                        </span>
-                                                        <span class="sub-title">5 hours ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="thumb-img bg-success">
-														<span class="text-white"><i class="fa fa-paper-plane-o"></i></span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Message sent</span>
-                                                        </span>
-                                                        <span class="sub-title">8 hours ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <span class="thumb-img bg-info">
-														<span class="text-white"><i class="ti-user"></i></span>
-                                                    </span>
-                                                    <div class="info">
-                                                        <span class="title">
-															<span class="font-size-14 text-semibold">Admin</span>
-                                                        <span class="text-gray">Welcome on board</span>
-                                                        </span>
-                                                        <span class="sub-title">8 hours ago</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="notice-footer">
-                                        <span>
-                                            <a href="" class="text-gray">Check all notifications <i class="ei-right-chevron pdd-left-5 font-size-10"></i></a>
-										</span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="side-panel-toggle" href="javascript:void(0);">
-                                    <i class="ti-align-right"></i>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -543,7 +381,7 @@
                                         <div class="chat-section">
                                             <h5 class="chat-title">Recent</h5>
                                             <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-1.jpg'); ?>" alt="">
                                                 <div class="user-info">
                                                     <span class="user-name">Jordan Hurst</span>
                                                     <span class="prev-chat">What good's a reward if...</span>
@@ -551,7 +389,7 @@
                                                 <span class="status online"><span></span></span>
                                             </a>
                                             <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-2.jpg" alt="">
+                                                <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-2.jpg'); ?>" alt="">
                                                 <div class="user-info">
                                                     <span class="user-name">Harriet Douglas</span>
                                                     <span class="prev-chat">Don't talk to me, stranger...</span>
@@ -559,7 +397,7 @@
                                                 <span class="status no-disturb"></span>
                                             </a>
                                             <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-3.jpg" alt="">
+                                                <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-3.jpg'); ?>" alt="">
                                                 <div class="user-info">
                                                     <span class="user-name">Victoria Clayton</span>
                                                     <span class="prev-chat">Well, the Force is what...</span>
@@ -567,7 +405,7 @@
                                                 <span class="status away"></span>
                                             </a>
                                             <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-6.jpg" alt="">
+                                                <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-6.jpg'); ?>" alt="">
                                                 <div class="user-info">
                                                     <span class="user-name">Michael Birch</span>
                                                     <span class="prev-chat">Good. Use your aggressive...</span>
@@ -576,6 +414,7 @@
                                             </a>
                                         </div>
                                         <div class="chat-section">
+                                            <?php /*
                                             <h5 class="chat-title">Members</h5>
                                             <a href="javascript:void(0);" class="chat-user chat-toggle">
                                                 <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
@@ -619,6 +458,7 @@
                                                 </div>
                                                 <span class="status"></span>
                                             </a>
+                                            */ ?>
                                         </div>
                                     </div>
                                     <div class="conversation">
@@ -678,7 +518,7 @@
                                             <div class="text-center mrg-top-20">
                                                 <div class="row">
                                                     <div class="col-md-6 ml-auto mr-auto text-center">
-                                                        <img class="img-fluid border-radius-round" src="assets/images/avatars/user-1.jpg" alt="">
+                                                        <img class="img-fluid border-radius-round" src="<?php echo base_url(); ?>assets/images/avatars/user-1.jpg" alt="">
                                                     </div>
                                                 </div>
                                                 <h4 class="mrg-top-20">Nate Leong</h4>
@@ -742,7 +582,7 @@
                                         <ul class="list-unstyled list-info">
                                             <li>
                                                 <a href="">
-                                                    <img class="thumb-img" src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                    <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-1.jpg'); ?>" alt="">
                                                     <div class="info">
                                                         <span class="title">Jordan Hurst</span>
                                                         <span class="sub-title">have send you a request</span>
@@ -752,7 +592,7 @@
                                             </li>
                                             <li>
                                                 <a href="">
-                                                    <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                    <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-4.jpg'); ?>" alt="">
                                                     <div class="info">
                                                         <span class="title">Samuel Field</span>
                                                         <span class="sub-title">have send you a request</span>
@@ -973,10 +813,11 @@
                 <footer class="content-footer">
                     <div class="footer">
                         <div class="copyright">
-                            <span>Copyright © 2017 <b class="text-dark">Theme_Nate</b>. All rights reserved.</span>
+                            <span>Copyright © 2018 <b class="text-dark">Bangladesh University of Professionals(BUP)</b>. All rights reserved.</span>
                             <span class="go-right">
-									<a href="" class="text-gray mrg-right-15">Term &amp; Conditions</a>
-									<a href="" class="text-gray">Privacy &amp; Policy</a>
+                                <span class="text-gray mrg-right-15">Developed and Managed By <a href="http://osourcebd.com/">Osource Bangaldesh Ltd.</a></span>
+<!--									<a href="" class="text-gray mrg-right-15">Term &amp; Conditions</a>-->
+<!--									<a href="" class="text-gray">Privacy &amp; Policy</a>-->
 								</span>
                         </div>
                     </div>
@@ -1011,8 +852,26 @@
     <script src="<?php echo base_url(); ?>assets/js/app.js"></script>
     <!-- endbuild -->
 
-    <!-- page js -->
-    <script src="<?php echo base_url(); ?>assets/js/dashboard/dashboard.js"></script>
+
+    <!-- Page specific Plugins will be placed here -->
+    <?php
+    if(!empty($mtPagePlugins)){
+        foreach($mtPagePlugins as $plugin){
+            echo '<script src="'.PLUGINS_JS_URL.$plugin.'"></script>';
+        }
+    }
+    ?>
+
+
+    <!-- Page specific javascript will be included here -->
+    <?php
+    if (!empty($mtPageScripts)) {
+        foreach ($mtPageScripts as $script) {
+            echo '<script src="' . PAGE_JS_URL . $script . '"></script>';
+        }
+    }
+    ?>
+
 
 </body>
 
