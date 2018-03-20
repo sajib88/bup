@@ -1,0 +1,7 @@
+login page
+
+add logo on top
+add text: Digital Archiving System
+
+remove bottom logo
+replace text: Developed and Managed By Osource Bangaldesh Limited<as a link it>
