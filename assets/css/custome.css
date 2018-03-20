@@ -10,6 +10,15 @@
     text-align: right;
 }
 
+.ver-mid{
+    vertical-align: text-bottom;
+    /*vertical-align: middle;*/
+}
+
+.ht-450{
+    height: 450px;
+}
+
 .ver-ht-20{
     height: 20%;
 }
@@ -26,6 +35,7 @@
 .pdd-top-btm-70{
     padding:70px 0;
 }
+
 
 .pdd-lf-10{
     padding-left: 10px;
@@ -46,4 +56,12 @@
 /*BORDER*/
 .brdr-btm-e5eaf3{
     border-bottom: 1px solid #e5eaf3;
+}
+
+.brdr-dash-e5eaf3{
+    border: 2px dashed grey;
+}
+
+.brdr-top-e5eaf3{
+    border-top: 2px solid #e5eaf3;
 }

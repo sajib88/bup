@@ -539,7 +539,7 @@
 
 
 <div class="page-title">
-    <h4>Upload Contents</h4>
+    <h4>All Contents</h4>
 </div>
 
 
@@ -547,81 +547,70 @@
 <div class="row">
 
     <!--video-->
-    <div class="col-md-6 col-sm-6 col-xm-12 pdd-lf-20 pdd-rt-10">
-        <div class="panel">
-            <div class="panel-body">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                <h4>Video Contents</h4>
-                    <div class="txt-al-center">
-                        <video width="420" height="240" controls>
-                            <source src="<?php echo base_url('assets/video/movie.mp4'); ?>" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+    <div class="col-md-6 col-sm-6 col-xm-12">
+        <div class="card">
+            <div class="card-block">
+                <div class="card-title">
+                    <h4>Video Contents</h4>
+                </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <div class="txt-al-center">
+                            <video width="420" height="240" controls>
+                                <source src="<?php echo base_url('assets/video/movie.mp4'); ?>" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <hr>
+                        </div>
+
+
+                        <ul class="list-unstyled video-list-thumbs">
+                            <li class="col-md-3 col-sm-3 col-xs-6">
+                                <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+                                    <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="200px" />
+                                    <h2>Claudio Bravo</h2>
+                                    <span class="glyphicon glyphicon-play-circle"></span>
+                                    <span class="duration">03:15</span>
+                                </a>
+                            </li>
+                            <li class="col-md-3 col-sm-3 col-xs-6">
+                                <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+                                    <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="200px" />
+                                    <h2>Claudio Bravo</h2>
+                                    <span class="glyphicon glyphicon-play-circle"></span>
+                                    <span class="duration">03:15</span>
+                                </a>
+                            </li>
+                            <li class="col-md-3 col-sm-3 col-xs-6">
+                                <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+                                    <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="200px" />
+                                    <h2>Claudio Bravo</h2>
+                                    <span class="glyphicon glyphicon-play-circle"></span>
+                                    <span class="duration">03:15</span>
+                                </a>
+                            </li>
+                            <li class="col-md-3 col-sm-3 col-xs-6">
+                                <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
+                                    <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="200px" />
+                                    <h2>Claudio Bravo</h2>
+                                    <span class="glyphicon glyphicon-play-circle"></span>
+                                    <span class="duration">03:15</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
 
-                <p>
-                <h5>Features:</h5>
-                <ul>
-                    <li>Responsive design with hover effect</li>
-                    <li>Compatible with bootstrap 3.0.0 and Up</li>
-                    <li>No Javascript</li>
-                </ul>
-                <hr>
-                </p>
-                </div>
-
-
-                <ul class="list-unstyled video-list-thumbs">
-                    <li class="col-lg-3 col-sm-4 col-xs-6">
-                        <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-                            <h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-                            <span class="glyphicon glyphicon-play-circle"></span>
-                            <span class="duration">03:15</span>
-                        </a>
-                    </li>
-                    <li class="col-lg-3 col-sm-4 col-xs-6">
-                        <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-                            <h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-                            <span class="glyphicon glyphicon-play-circle"></span>
-                            <span class="duration">03:15</span>
-                        </a>
-                    </li>
-                    <li class="col-lg-3 col-sm-4 col-xs-6">
-                        <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-                            <h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-                            <span class="glyphicon glyphicon-play-circle"></span>
-                            <span class="duration">03:15</span>
-                        </a>
-                    </li>
-                    <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-                        <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-                            <h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-                            <span class="glyphicon glyphicon-play-circle"></span>
-                            <span class="duration">03:15</span>
-                        </a>
-                    </li>
-                    <li class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-                        <a href="#" title="Claudio Bravo, antes su debut con el Barça en la Liga">
-                            <img src="http://i.ytimg.com/vi/ZKOtE9DOwGE/mqdefault.jpg" alt="Barca" class="img-responsive" height="130px" />
-                            <h2>Claudio Bravo, antes su debut con el Barça en la Liga</h2>
-                            <span class="glyphicon glyphicon-play-circle"></span>
-                            <span class="duration">03:15</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
 
     <!--audio-->
-    <div class="col-md-6 col-sm-6 col-xm-12 pdd-lf-10 pdd-rt-20">
-        <div class="panel">
-            <div class="panel-body">
-                <h4>Audio Contents</h4>
+    <div class="col-md-6 col-sm-6 col-xm-12">
+        <div class="card">
+            <div class="card-block">
+                <div class="card-title">
+                    <h4>Audio Contents</h4>
+                </div>
                 <div class="text-center">
                     <h2 >Audio may take some time to buffer please wait!</h2>
                     <p>Audio provided by <a href="http://robbbenson.com/Robb_Benson/Songwriter.html">Robb Benson</a> click on his name to check out his website.</p>
@@ -651,156 +640,14 @@
 </div>
 
 <div class="row">
-    <div class="col-md-6 col-sm-6 col-xm-12 pdd-rt-10">
-        <!-- Slider -->
-        <div class="panel">
-            <div class="panel-body">
-                <h4>Image Contents</h4>
-                <div class="col-sm-6" id="slider-thumbs">
-                    <!-- Bottom switcher of slider -->
-                    <ul class="hide-bullets">
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-0">
-                                <img src="http://placehold.it/150x150&text=zero">
-                            </a>
-                        </li>
 
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/150x150&text=4"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/150x150&text=5"></a>
-                        </li>
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-6"><img src="http://placehold.it/150x150&text=6"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-7"><img src="http://placehold.it/150x150&text=7"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-8"><img src="http://placehold.it/150x150&text=8"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-9"><img src="http://placehold.it/150x150&text=9"></a>
-                        </li>
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-10"><img src="http://placehold.it/150x150&text=10"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-11"><img src="http://placehold.it/150x150&text=11"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-12"><img src="http://placehold.it/150x150&text=12"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-13"><img src="http://placehold.it/150x150&text=13"></a>
-                        </li>
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-14"><img src="http://placehold.it/150x150&text=14"></a>
-                        </li>
-
-                        <li class="col-sm-3">
-                            <a class="thumbnail" id="carousel-selector-15"><img src="http://placehold.it/150x150&text=15"></a>
-                        </li>
-                    </ul>
+    <!--Document-->
+    <div class="col-md-6 col-sm-6 col-xm-12">
+        <div class="card">
+            <div class="card-block">
+                <div class="card-title">
+                    <h4>Document Contents</h4>
                 </div>
-                <div class="col-sm-6">
-                <div class="col-xs-12" id="slider">
-                    <!-- Top part of the slider -->
-                    <div class="row">
-                        <div class="col-sm-12" id="carousel-bounding-box">
-                            <div class="carousel slide" id="myCarousel">
-                                <!-- Carousel items -->
-                                <div class="carousel-inner">
-                                    <div class="active item" data-slide-number="0">
-                                        <img src="http://placehold.it/470x480&text=zero"></div>
-
-                                    <div class="item" data-slide-number="1">
-                                        <img src="http://placehold.it/470x480&text=1"></div>
-
-                                    <div class="item" data-slide-number="2">
-                                        <img src="http://placehold.it/470x480&text=2"></div>
-
-                                    <div class="item" data-slide-number="3">
-                                        <img src="http://placehold.it/470x480&text=3"></div>
-
-                                    <div class="item" data-slide-number="4">
-                                        <img src="http://placehold.it/470x480&text=4"></div>
-
-                                    <div class="item" data-slide-number="5">
-                                        <img src="http://placehold.it/470x480&text=5"></div>
-
-                                    <div class="item" data-slide-number="6">
-                                        <img src="http://placehold.it/470x480&text=6"></div>
-
-                                    <div class="item" data-slide-number="7">
-                                        <img src="http://placehold.it/470x480&text=7"></div>
-
-                                    <div class="item" data-slide-number="8">
-                                        <img src="http://placehold.it/470x480&text=8"></div>
-
-                                    <div class="item" data-slide-number="9">
-                                        <img src="http://placehold.it/470x480&text=9"></div>
-
-                                    <div class="item" data-slide-number="10">
-                                        <img src="http://placehold.it/470x480&text=10"></div>
-
-                                    <div class="item" data-slide-number="11">
-                                        <img src="http://placehold.it/470x480&text=11"></div>
-
-                                    <div class="item" data-slide-number="12">
-                                        <img src="http://placehold.it/470x480&text=12"></div>
-
-                                    <div class="item" data-slide-number="13">
-                                        <img src="http://placehold.it/470x480&text=13"></div>
-
-                                    <div class="item" data-slide-number="14">
-                                        <img src="http://placehold.it/470x480&text=14"></div>
-
-                                    <div class="item" data-slide-number="15">
-                                        <img src="http://placehold.it/470x480&text=15"></div>
-                                </div>
-                                <!-- Carousel nav -->
-                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/Slider-->
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6 col-sm-6 col-xm-12 pdd-rt-10">
-        <!-- Doc-->
-        <div class="panel">
-            <div class="panel-body">
-                <h4>Image Contents</h4>
                 <div class="col-sm-6" id="slider-thumbs">
                     <!-- Bottom switcher of slider -->
                     <ul class="hide-bullets">
@@ -936,10 +783,157 @@
                         </div>
                     </div>
                 </div>
-                <!--/Slider-->
             </div>
         </div>
     </div>
+
+    <!--Image-->
+    <div class="col-md-6 col-sm-6 col-xm-12">
+        <div class="card">
+            <div class="card-block">
+                <div class="card-title">
+                    <h4>Image Contents</h4>
+                </div>
+                <div class="col-sm-6" id="slider-thumbs">
+                    <!-- Bottom switcher of slider -->
+                    <ul class="hide-bullets">
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-0">
+                                <img src="http://placehold.it/150x150&text=zero">
+                            </a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/150x150&text=4"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/150x150&text=5"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-6"><img src="http://placehold.it/150x150&text=6"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-7"><img src="http://placehold.it/150x150&text=7"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-8"><img src="http://placehold.it/150x150&text=8"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-9"><img src="http://placehold.it/150x150&text=9"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-10"><img src="http://placehold.it/150x150&text=10"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-11"><img src="http://placehold.it/150x150&text=11"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-12"><img src="http://placehold.it/150x150&text=12"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-13"><img src="http://placehold.it/150x150&text=13"></a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-14"><img src="http://placehold.it/150x150&text=14"></a>
+                        </li>
+
+                        <li class="col-sm-3">
+                            <a class="thumbnail" id="carousel-selector-15"><img src="http://placehold.it/150x150&text=15"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-xs-12" id="slider">
+                        <!-- Top part of the slider -->
+                        <div class="row">
+                            <div class="col-sm-12" id="carousel-bounding-box">
+                                <div class="carousel slide" id="myCarousel">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="active item" data-slide-number="0">
+                                            <img src="http://placehold.it/470x480&text=zero"></div>
+
+                                        <div class="item" data-slide-number="1">
+                                            <img src="http://placehold.it/470x480&text=1"></div>
+
+                                        <div class="item" data-slide-number="2">
+                                            <img src="http://placehold.it/470x480&text=2"></div>
+
+                                        <div class="item" data-slide-number="3">
+                                            <img src="http://placehold.it/470x480&text=3"></div>
+
+                                        <div class="item" data-slide-number="4">
+                                            <img src="http://placehold.it/470x480&text=4"></div>
+
+                                        <div class="item" data-slide-number="5">
+                                            <img src="http://placehold.it/470x480&text=5"></div>
+
+                                        <div class="item" data-slide-number="6">
+                                            <img src="http://placehold.it/470x480&text=6"></div>
+
+                                        <div class="item" data-slide-number="7">
+                                            <img src="http://placehold.it/470x480&text=7"></div>
+
+                                        <div class="item" data-slide-number="8">
+                                            <img src="http://placehold.it/470x480&text=8"></div>
+
+                                        <div class="item" data-slide-number="9">
+                                            <img src="http://placehold.it/470x480&text=9"></div>
+
+                                        <div class="item" data-slide-number="10">
+                                            <img src="http://placehold.it/470x480&text=10"></div>
+
+                                        <div class="item" data-slide-number="11">
+                                            <img src="http://placehold.it/470x480&text=11"></div>
+
+                                        <div class="item" data-slide-number="12">
+                                            <img src="http://placehold.it/470x480&text=12"></div>
+
+                                        <div class="item" data-slide-number="13">
+                                            <img src="http://placehold.it/470x480&text=13"></div>
+
+                                        <div class="item" data-slide-number="14">
+                                            <img src="http://placehold.it/470x480&text=14"></div>
+
+                                        <div class="item" data-slide-number="15">
+                                            <img src="http://placehold.it/470x480&text=15"></div>
+                                    </div>
+                                    <!-- Carousel nav -->
+                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </div>
 
@@ -954,8 +948,8 @@
 <?php
 // --- define plugin js
 //$mtPagePlugins = array('assets/js/dashboard/jquery-1.11.1.min.js', 'assets/js/dashboard/jquery-1.10.2.min.js', '/assets/js/dashboard/bootstrap.min.js', 'assets/js/dashboard/dashboard.js');
-$mtPagePlugins = array('/assets/js/dashboard/bootstrap.min.js', 'assets/js/dashboard/dashboard.js');
+$mtPagePlugins = array('/assets/js/dashboard/bootstrap.min.js', '/assets/js/dashboard/dashboard.js');
 
 //---- define page javascript
-$mtPageScripts = array("page_javascript/dashboard/image.js", "page_javascript/dashboard/audio.js");
+$mtPageScripts = array("/page_javascript/dashboard/image.js", "/page_javascript/dashboard/audio.js");
 ?>
