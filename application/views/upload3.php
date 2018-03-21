@@ -191,37 +191,18 @@
 
 <?php
 // --- define plugin js
-$PagePlug = array(
-    '/assets/js/upload/js/vendor/jquery.ui.widget.js',
-    '/assets/js/upload/js/main.js', '/assets/js/upload/js/app.js',
-    '/assets/js/upload/js/jquery.fileupload.js', '/assets/js/upload/js/jquery.fileupload-audio.js',
-    '/assets/js/upload/js/jquery.fileupload-image.js', '/assets/js/upload/js/jquery.fileupload-video.js',
-    '/assets/js/upload/js/jquery.fileupload-process.js', '/assets/js/upload/js/jquery.fileupload-ui.js',
-    '/assets/js/upload/js/jquery.fileupload-validate.js', '/assets/js/upload/js/jquery.fileupload-jquery-ui.js',
-    '/assets/js/upload/js/jquery.iframe-transport.js',
-
-    '/assets/bower_components/jquery/dist/jquery.min.js', '/assets/bower_components/popper.js/dist/umd/popper.min.js',
-    '/assets/bower_components/bootstrap/dist/js/bootstrap.js', '/assets/bower_components/PACE/pace.min.js',
-    '/assets/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
-
-    '/assets/js/app.js', '/assets/js/forms/form-elements.js',
-
-    '/assets/bower_components/selectize/dist/js/standalone/selectize.min.js', '/assets/bower_components/moment/min/moment.min.js',
-    '/assets/bower_components/bootstrap-daterangepicker/daterangepicker.js',  '/assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
-    '/assets/bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js', '/assets/bower_components/summernote/dist/summernote.min.js'
+$mtPagePlugins = array(
+    '/js/upload/js/vendor/jquery.ui.widget.js', '/js/forms/form-elements.js',
+    '/js/upload/js/main.js', '/js/upload/js/app.js',
+    '/js/upload/js/jquery.fileupload.js', '/js/upload/js/jquery.fileupload-audio.js',
+    '/js/upload/js/jquery.fileupload-image.js', '/js/upload/js/jquery.fileupload-video.js',
+    '/js/upload/js/jquery.fileupload-process.js', '/js/upload/js/jquery.fileupload-ui.js',
+    '/js/upload/js/jquery.fileupload-validate.js', '/js/upload/js/jquery.fileupload-jquery-ui.js',
+    '/js/upload/js/jquery.iframe-transport.js'
 );
 
 //---- define page javascript
-//$mtPageScripts = array("page_javascript/dashboard/image.js", "page_javascript/dashboard/audio.js");
-
-require_once ('footer.php');
-
+$mtPageScripts = array("/upload/upload.js");
 ?>
 
-
-
-
-
-
-
-
+<?php require_once('maintemp_footer.php'); ?>
