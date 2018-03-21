@@ -206,7 +206,7 @@
 
 <?php
 // --- define plugin js
-$mtPagePlugins = array(
+$PagePlug = array(
     '/assets/js/upload/js/vendor/jquery.ui.widget.js',
     '/assets/js/upload/js/main.js', '/assets/js/upload/js/app.js',
     '/assets/js/upload/js/jquery.fileupload.js', '/assets/js/upload/js/jquery.fileupload-audio.js',
@@ -218,4 +218,15 @@ $mtPagePlugins = array(
 
 //---- define page javascript
 //$mtPageScripts = array("page_javascript/dashboard/image.js", "page_javascript/dashboard/audio.js");
+
+require_once ('footer.php');
+
 ?>
+
+
+
+
+
+
+
+

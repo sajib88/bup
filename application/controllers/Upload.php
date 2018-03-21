@@ -22,7 +22,9 @@ class Upload extends CI_Controller {
 
     public function index()
     {
-        $this->mytemplate->loadAmin('upload2');
+        $this->load->view('header');
+        $this->load->view('upload2');
+       /// $this->load->view('footer');
     }
 
 }
