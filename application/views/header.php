@@ -17,17 +17,11 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/PACE/themes/blue/pace-theme-minimal.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
-    <!--upload-->
-<!--    <link rel="stylesheet" href="--><?php //echo base_url(); ?><!--assets/css/upload/css/style.css">-->
 
     <!-- blueimp Gallery styles -->
-    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/blueimp-gallery.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/jquery.fileupload.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/jquery.fileupload-ui.css">
-    <!-- CSS adjustments for browsers with JavaScript disabled -->
-    <noscript><link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/jquery.fileupload-noscript.css"></noscript>
-    <noscript><link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/jquery.fileupload-ui-noscript.css"></noscript>
     <!--upload end-->
 
 
@@ -43,6 +37,8 @@
     <link href="<?php echo base_url(); ?>assets/css/app.css" rel="stylesheet">
 
     <link href="<?php echo base_url(); ?>assets/css/custome.css" rel="stylesheet">
+
+
 </head>
 
 <body>

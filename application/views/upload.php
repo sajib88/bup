@@ -79,6 +79,8 @@
 
 </div>
 
+
+
 <?php
 // --- define plugin js
 $mtPagePlugins = array('/assets/js/dashboard/bootstrap.min.js', '/assets/jQuery-File-Upload-master/js/main.js',

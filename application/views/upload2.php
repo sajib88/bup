@@ -21,20 +21,18 @@
 <!--                </div>-->
 
                 <div class="col-md-12 col-sm-12 col-xs-12 brdr-dash-e5eaf3 ht-450 txt-al-center ver-mid pdd-top-145">
-
-                    <!-- The file upload form used as target for the file upload widget -->
                     <form id="fileupload" action="https://jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
                         <!-- Redirect browsers with JavaScript disabled to the origin page -->
                         <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
                         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
                         <div class="row fileupload-buttonbar">
-                            <div class="col-lg-12">
+                            <div class="col-lg-7">
                                 <!-- The fileinput-button span is used to style the file input field as button -->
                                 <span class="btn btn-success fileinput-button">
-                                    <i class="glyphicon glyphicon-plus"></i>
-                                    <span>Add files...</span>
-                                    <input type="file" name="files[]" multiple>
-                                </span>
+                    <i class="glyphicon glyphicon-plus"></i>
+                    <span>Add files...</span>
+                    <input type="file" name="files[]" multiple>
+                </span>
                                 <button type="submit" class="btn btn-primary start">
                                     <i class="glyphicon glyphicon-upload"></i>
                                     <span>Start upload</span>
@@ -67,7 +65,6 @@
                     <br>
 
                 </div>
-
                 <!-- The blueimp Gallery widget -->
                 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
                     <div class="slides"></div>
@@ -78,6 +75,87 @@
                     <a class="play-pause"></a>
                     <ol class="indicator"></ol>
                 </div>
+                <!-- The template to display files available for upload -->
+                <script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload fade">
+        <td>
+            <span class="preview"></span>
+        </td>
+        <td>
+            <p class="name">{%=file.name%}</p>
+            <strong class="error text-danger"></strong>
+        </td>
+        <td>
+            <p class="size">Processing...</p>
+            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+        </td>
+        <td>
+            {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn btn-primary start" disabled>
+                    <i class="glyphicon glyphicon-upload"></i>
+                    <span>Start</span>
+                </button>
+            {% } %}
+            {% if (!i) { %}
+                <button class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
+                <!-- The template to display files available for download -->
+                <script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download fade">
+        <td>
+            <span class="preview">
+                {% if (file.thumbnailUrl) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                {% } %}
+            </span>
+        </td>
+        <td>
+            <p class="name">
+                {% if (file.url) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+                {% } else { %}
+                    <span>{%=file.name%}</span>
+                {% } %}
+            </p>
+            {% if (file.error) { %}
+                <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+            {% } %}
+        </td>
+        <td>
+            <span class="size">{%=o.formatFileSize(file.size)%}</span>
+        </td>
+        <td>
+            {% if (file.deleteUrl) { %}
+                <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <span>Delete</span>
+                </button>
+                <input type="checkbox" name="delete" value="1" class="toggle">
+            {% } else { %}
+                <button class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
+
+
+                </div>
+
+                <!-- The blueimp Gallery widget -->
+
 
             </div>
         </div>
@@ -193,23 +271,20 @@
 // --- define plugin js
 $PagePlug = array(
     '/assets/js/upload/js/vendor/jquery.ui.widget.js',
-    '/assets/js/upload/js/main.js', '/assets/js/upload/js/app.js',
-    '/assets/js/upload/js/jquery.fileupload.js', '/assets/js/upload/js/jquery.fileupload-audio.js',
-    '/assets/js/upload/js/jquery.fileupload-image.js', '/assets/js/upload/js/jquery.fileupload-video.js',
-    '/assets/js/upload/js/jquery.fileupload-process.js', '/assets/js/upload/js/jquery.fileupload-ui.js',
-    '/assets/js/upload/js/jquery.fileupload-validate.js', '/assets/js/upload/js/jquery.fileupload-jquery-ui.js',
+    '/assets/js/upload/js/main.js',
+    '/assets/js/upload/js/jquery.fileupload.js',
+    '/assets/js/upload/js/jquery.fileupload-audio.js',
+    '/assets/js/upload/js/jquery.fileupload-image.js',
+    '/assets/js/upload/js/jquery.fileupload-video.js',
+    '/assets/js/upload/js/jquery.fileupload-process.js',
+    '/assets/js/upload/js/jquery.fileupload-ui.js',
+    '/assets/js/upload/js/jquery.fileupload-validate.js',
+    '/assets/js/upload/js/jquery.fileupload-jquery-ui.js',
     '/assets/js/upload/js/jquery.iframe-transport.js',
 
-    '/assets/bower_components/jquery/dist/jquery.min.js', '/assets/bower_components/popper.js/dist/umd/popper.min.js',
-    '/assets/bower_components/bootstrap/dist/js/bootstrap.js', '/assets/bower_components/PACE/pace.min.js',
-    '/assets/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
-
-    '/assets/js/app.js', '/assets/js/forms/form-elements.js',
-
-    '/assets/bower_components/selectize/dist/js/standalone/selectize.min.js', '/assets/bower_components/moment/min/moment.min.js',
-    '/assets/bower_components/bootstrap-daterangepicker/daterangepicker.js',  '/assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
-    '/assets/bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js', '/assets/bower_components/summernote/dist/summernote.min.js'
 );
+
+
 
 //---- define page javascript
 //$mtPageScripts = array("page_javascript/dashboard/image.js", "page_javascript/dashboard/audio.js");

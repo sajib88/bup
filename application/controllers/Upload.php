@@ -26,5 +26,12 @@ class Upload extends CI_Controller {
         $this->load->view('upload2');
        /// $this->load->view('footer');
     }
+    public function dataupload()
+    {
+        $this->load->view('header');
+        $this->load->view('dataupload');
+        /// $this->load->view('footer');
+    }
+
 
 }

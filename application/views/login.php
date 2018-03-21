@@ -46,8 +46,11 @@
                         <div class="vertical-align full-height pdd-horizon-70">
                             <div class="table-cell">
                                 <div class="pdd-horizon-15">
-                                    <div class="pdd-top-btm-70 txt-al-center">
-                                        <img class="img-logo" src="<?php echo base_url('assets/images/logo/BUP_logo_login.jpg'); ?>">
+                                    <div class="pdd-top-btm-20 txt-al-center">
+                                      <div class=""><img class="img-logo" src="<?php echo base_url('assets/images/logo/BUP_logo_login.jpg'); ?>"></div>
+                                        <div class=""><img class="img-logo" width="50%" src="<?php echo base_url('assets/images/logo/BUP_logo_login.jpg'); ?>"></div>
+
+
                                     </div>
 
                                     <h2>Login</h2>
