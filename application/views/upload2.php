@@ -208,11 +208,16 @@
 // --- define plugin js
 $PagePlug = array(
     '/assets/js/upload/js/vendor/jquery.ui.widget.js',
-    '/assets/js/upload/js/main.js', '/assets/js/upload/js/app.js',
-    '/assets/js/upload/js/jquery.fileupload.js', '/assets/js/upload/js/jquery.fileupload-audio.js',
-    '/assets/js/upload/js/jquery.fileupload-image.js', '/assets/js/upload/js/jquery.fileupload-video.js',
-    '/assets/js/upload/js/jquery.fileupload-process.js', '/assets/js/upload/js/jquery.fileupload-ui.js',
-    '/assets/js/upload/js/jquery.fileupload-validate.js', '/assets/js/upload/js/jquery.fileupload-jquery-ui.js',
+    '/assets/js/upload/js/main.js',
+    '/assets/js/upload/js/app.js',
+    '/assets/js/upload/js/jquery.fileupload.js',
+    '/assets/js/upload/js/jquery.fileupload-audio.js',
+    '/assets/js/upload/js/jquery.fileupload-image.js',
+    '/assets/js/upload/js/jquery.fileupload-video.js',
+    '/assets/js/upload/js/jquery.fileupload-process.js',
+    '/assets/js/upload/js/jquery.fileupload-ui.js',
+    '/assets/js/upload/js/jquery.fileupload-validate.js',
+    '/assets/js/upload/js/jquery.fileupload-jquery-ui.js',
     '/assets/js/upload/js/jquery.iframe-transport.js'
 );
 
