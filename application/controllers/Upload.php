@@ -23,8 +23,15 @@ class Upload extends CI_Controller {
     public function index()
     {
         $this->load->view('header');
+//        $this->load->view('upload');
         $this->load->view('upload2');
        /// $this->load->view('footer');
+    }
+    public function up()
+    {
+        $this->load->view('header');
+        $this->load->view('upload6');
+
     }
     public function dataupload()
     {
@@ -33,5 +40,11 @@ class Upload extends CI_Controller {
         /// $this->load->view('footer');
     }
 
+    public function afterupload()
+    {
+        $this->load->view('header');
+        $this->load->view('upload6');
+        echo 'abc';
+    }
 
 }

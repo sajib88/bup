@@ -29,6 +29,19 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/nvd3/build/nv.d3.min.css" />
 
+    <!-- FORM ELEMENTS CSS-->
+    <!-- plugins css -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/selectize/dist/css/selectize.default.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/summernote/dist/summernote.css" />
+    <!-- FORM ELEMENTS CSS-->
+
     <!-- core css -->
     <link href="<?php echo base_url(); ?>assets/css/ei-icon.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/css/themify-icons.css" rel="stylesheet">
@@ -100,29 +113,6 @@
                                 <span class="title">Help</span>
                             </a>
                         </li>
-
-<!--                        <li class="nav-item dropdown">-->
-<!--                            <a class="dropdown-toggle" href="javascript:void(0);">-->
-<!--                                <span class="icon-holder">-->
-<!--										<i class="ti-package"></i>-->
-<!--									</span>-->
-<!--                                <span class="title">Apps</span>-->
-<!--                                <span class="arrow">-->
-<!--										<i class="ti-angle-right"></i>-->
-<!--									</span>-->
-<!--                            </a>-->
-<!--                            <ul class="dropdown-menu">-->
-<!--                                <li>-->
-<!--                                    <a href="email.html">Email</a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="calendar.html">Calendar</a>-->
-<!--                                </li>-->
-<!--                                <li>-->
-<!--                                    <a href="social.html">Social</a>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </li>-->
                     </ul>
                 </div>
             </div>

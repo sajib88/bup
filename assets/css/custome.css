@@ -15,6 +15,10 @@
     /*vertical-align: middle;*/
 }
 
+.wd-auto{
+    width: auto;
+}
+
 .ht-450{
     height: 450px;
 }
@@ -51,6 +55,15 @@
 
 .pdd-rt-10{
     padding-right: 10px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.make_point{
+    @import compass;
+    cursor: pointer;
 }
 
 /*BORDER*/

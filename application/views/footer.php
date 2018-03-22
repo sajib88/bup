@@ -47,26 +47,70 @@
 
 
 <!--    upload-->
-<link rel="stylesheet" href="<?php echo base_url(); ?>n/css/style.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>n/css/blueimp-gallery.min.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>n/css/jquery.fileupload.css">
-<link rel="stylesheet" href="<?php echo base_url(); ?>n/css/jquery.fileupload-ui.css">
+<!-- CSS FOR UPLOAD -->
+
+<!--<link rel="stylesheet" href="--><?php //echo base_url(); ?><!--n/css/blueimp-gallery.min.css">-->
+<!--<link rel="stylesheet" href="--><?php //echo base_url(); ?><!--n/css/jquery.fileupload.css">-->
+<!--<link rel="stylesheet" href="--><?php //echo base_url(); ?><!--n/css/jquery.fileupload-ui.css">-->
+
 <!-- CSS FOR UPLOAD -->
 <!-- JS FOR UPLOAD -->
-<script src="<?php echo base_url(); ?>n/js/vendor/jquery.ui.widget.js"></script>
-<script src="<?php echo base_url(); ?>n/js/tmpl.min.js"></script>
-<script src="<?php echo base_url(); ?>n/js/load-image.all.min.js"></script>
-<script src="<?php echo base_url(); ?>n/js/canvas-to-blob.min.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.blueimp-gallery.min.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.iframe-transport.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.fileupload.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.fileupload-process.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.fileupload-image.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.fileupload-audio.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.fileupload-video.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.fileupload-validate.js"></script>
-<script src="<?php echo base_url(); ?>n/js/jquery.fileupload-ui.js"></script>
-<script src="<?php echo base_url(); ?>n/js/main.js"></script>
+
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/vendor/jquery.ui.widget.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/tmpl.min.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/load-image.all.min.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/canvas-to-blob.min.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.blueimp-gallery.min.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.iframe-transport.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.fileupload.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.fileupload-process.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.fileupload-image.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.fileupload-audio.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.fileupload-video.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.fileupload-validate.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/jquery.fileupload-ui.js"></script>-->
+<!--<script src="--><?php //echo base_url(); ?><!--n/js/main.js"></script>-->
+
+<!--    upload-->
+
+<!-- build:js assets/js/vendor.js -->
+<!-- plugins js -->
+<script src="<?php echo base_url(); ?>assets/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/PACE/pace.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+<!-- endbuild -->
+
+<!-- build:js assets/js/app.min.js -->
+<!-- core js -->
+<script src="<?php echo base_url(); ?>assets/js/app.js"></script>
+<!-- endbuild -->
+
+<!-- page plugins js -->
+<script src="<?php echo base_url(); ?>assets/bower_components/selectize/dist/js/standalone/selectize.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/moment/min/moment.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+<script src="<?php echo base_url(); ?>assets/bower_components/summernote/dist/summernote.min.js"></script>
+
+<!-- page js -->
+<script src="<?php echo base_url(); ?>assets/js/forms/form-elements.js"></script>
+
+
+<?php
+
+//print_r($UploadPlug);
+
+if (!empty($UploadPlug)) {
+    foreach ($UploadPlug as $script) {
+        echo '<script src="' . base_url() . $script . '"></script>';
+    }
+}
+
+?>
+
 
 <!--    upload end-->
 
@@ -77,15 +121,6 @@
 <script src="<?php echo base_url(); ?>assets/js/app.js"></script>
 <!-- endbuild -->
 
-<?php
-
-
-if (!empty($PagePlug)) {
-    foreach ($PagePlug as $script) {
-        echo '<script src="' . base_url() . $script . '"></script>';
-    }
-}
-?>
 
 
 </body>

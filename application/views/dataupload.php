@@ -135,4 +135,35 @@
 
 
 </script>
-<?php require_once ('footer.php'); ?>
+
+<?php
+// --- define plugin js
+$UploadPlug = array(
+    '/assets/js/upload/js/vendor/jquery.ui.widget.js',
+    'n/js/tmpl.min.js',
+    'n/js/load-image.all.min.js',
+    'n/js/canvas-to-blob.min.js',
+    'n/js/jquery.blueimp-gallery.min.js',
+    'n/js/jquery.iframe-transport.js',
+    'n/js/jquery.fileupload.js',
+    'n/js/jquery.fileupload-process.js',
+    'n/js/jquery.fileupload-image.js',
+    'n/js/jquery.fileupload-audio.js',
+    'n/js/jquery.fileupload-video.js',
+    'n/js/jquery.fileupload-validate.js',
+    'assets/js/upload/js/jquery.fileupload-ui.js',
+    'assets/js/upload/js/main.js'
+
+//    '/assets/bower_components/jquery/dist/jquery.min.js', '/assets/bower_components/popper.js/dist/umd/popper.min.js',
+//    '/assets/bower_components/bootstrap/dist/js/bootstrap.js', '/assets/bower_components/PACE/pace.min.js',
+//    '/assets/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
+//
+//    '/assets/js/app.js', '/assets/js/forms/form-elements.js',
+//
+//    '/assets/bower_components/selectize/dist/js/standalone/selectize.min.js', '/assets/bower_components/moment/min/moment.min.js',
+//    '/assets/bower_components/bootstrap-daterangepicker/daterangepicker.js',  '/assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
+//    '/assets/bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js', '/assets/bower_components/summernote/dist/summernote.min.js'
+);
+
+
+require_once ('footer.php'); ?>
