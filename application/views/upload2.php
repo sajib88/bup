@@ -9,7 +9,7 @@
     <!-- The file upload form used as target for the file upload widget -->
     <form id="fileupload" class="col-md-12 col-sm-12 col-xm-12" action="" method="POST" enctype="multipart/form-data">
 
-        <div class="col-md-7 col-sm-7 col-xm-12">
+        <div class="col-md-7 col-sm-7 col-xm-12 no-pdd-left">
             <div class="card">
                 <div class="card-block">
                     <div class="card-title">
@@ -63,7 +63,7 @@
         </div>
 
 
-        <div class="col-md-5 col-sm-5 col-xm-12">
+        <div class="col-md-5 col-sm-5 col-xm-12 no-pdd-right">
             <div class="card">
                 <div class="card-block">
                     <div class="card-title">

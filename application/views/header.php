@@ -90,7 +90,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="" href="#">
+                            <a class="" href="<?php echo base_url(); ?>search">
                                 <span class="icon-holder">
 										<i class="ti-search"></i>
 									</span>
@@ -98,7 +98,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="" href="#">
+                            <a class="" href="<?php echo base_url(); ?>search/advsearch">
                                 <span class="icon-holder">
 										<i class="ti-target"></i>
 									</span>
