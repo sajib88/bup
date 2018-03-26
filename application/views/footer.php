@@ -98,6 +98,17 @@
 <!-- page js -->
 <script src="<?php echo base_url(); ?>assets/js/forms/form-elements.js"></script>
 
+<!-- build:js assets/js/app.min.js -->
+<!-- core js -->
+<script src="<?php echo base_url(); ?>assets/js/app.js"></script>
+<!-- endbuild -->
+
+<!-- page plugins js -->
+<script src="<?php echo base_url(); ?>assets/bower_components/datatables/media/js/jquery.dataTables.js"></script>
+
+<!-- page js -->
+<script src="<?php echo base_url(); ?>assets/js/table/data-table.js"></script>
+
 
 <?php
 

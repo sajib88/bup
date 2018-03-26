@@ -9,14 +9,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo/favicon.png">
 
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
-    <!-- plugins css -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.css" />
-<!--    <link rel="stylesheet" href="--><?php //echo base_url(); ?><!--assets/dropzone-4.3.0/dist/dropzone.css" />-->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/PACE/themes/blue/pace-theme-minimal.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
-
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/netdna/bootstrap.min.css">
+<!--    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
 
     <!-- blueimp Gallery styles -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/blueimp-gallery.min.css">
@@ -41,6 +35,9 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/summernote/dist/summernote.css" />
     <!-- FORM ELEMENTS CSS-->
+
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets//bower_components/datatables/media/css/jquery.dataTables.css" />
 
     <!-- core css -->
     <link href="<?php echo base_url(); ?>assets/css/ei-icon.css" rel="stylesheet">

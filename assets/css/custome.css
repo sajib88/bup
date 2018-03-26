@@ -78,3 +78,7 @@ input[type=file] {
 .brdr-top-e5eaf3{
     border-top: 2px solid #e5eaf3;
 }
+
+.txt-color-red{
+    color: red;
+}
