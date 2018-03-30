@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-    <title>Espire - Bootstrap 4 Admin Template</title>
+    <title>BUP DIGITAL ARCHIVE</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo/favicon.png">
-
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <!-- plugins css -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/PACE/themes/blue/pace-theme-minimal.css" />
@@ -42,13 +42,14 @@
                     </div>
                 </div>
                 <div class="col-md-4 no-pdd-horizon">
-                    <div class="full-height bg-white height-100">
+                    <div class="full-height bg-white height-80 pdd-top-20">
                         <div class="vertical-align full-height pdd-horizon-70">
                             <div class="table-cell">
                                 <div class="pdd-horizon-15">
                                     <div class="pdd-top-btm-20 txt-al-center">
-                                      <div class=""><img class="img-logo" src="<?php echo base_url('assets/images/logo/BUP_logo_login.jpg'); ?>"></div>
-                                        <div class=""><img class="img-logo" width="50%" src="<?php echo base_url('assets/images/logo/BUP_logo_login.jpg'); ?>"></div>
+
+                                        <div class="visible-lg"><img class="img-logo " src="<?php echo base_url('assets/images/logo/BUP_logo_login.jpg'); ?>"></div>
+                                        <div class="hidden-lg"><img class="img-logo "  src="<?php echo base_url('assets/images/logo/BUP_logo_login.jpg'); ?>"></div>
 
 
                                     </div>
@@ -68,7 +69,7 @@
                                         </div>
                                         <a href="<?php echo base_url('welcome/dashboard' ); ?>" class="btn btn-info" aria-hidden="true">Login</a>
 <!--                                        <button class="btn btn-info">Login</button>-->
-
+                                        <div class="hidden-lg"> <div class="pdd-top-20"></div>
                                     </form>
                                 </div>
                             </div>
