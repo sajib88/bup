@@ -133,7 +133,34 @@ if (!empty($UploadPlug)) {
 <!-- endbuild -->
 
 
+<!-- image light box -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css"/>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js.map"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
+
+<script>
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+<!-- image light box -->
+
+<!-- sound -->
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/bower_components/audio/src/js/jquery.mkhplayer.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/bower_components/audio/src/css/mkhplayer.default.css"/>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('audio').mkhPlayer();
+    });
+</script>
+
+<!-- sound -->
 </body>
 
 </html>
