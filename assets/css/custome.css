@@ -15,6 +15,10 @@
     /*vertical-align: middle;*/
 }
 
+.wt-500{
+    font-weight: 500;
+}
+
 .wd-auto{
     width: auto;
 }
@@ -79,6 +83,38 @@ input[type=file] {
     border-top: 2px solid #e5eaf3;
 }
 
+.dataTables_wrapper .dataTables_length{
+    color: slategray;
+}
+
+.dataTables_wrapper .dataTables_filter{
+    color: slategray;
+}
+
+.table > thead > tr > th{
+    color: slategray;
+}
+
 .txt-color-red{
     color: red;
+}
+
+.txt-color-slategray{
+    color: slategray !important;
+}
+
+.txt-color-green{
+    color: green;
+}
+
+.txt-color-orange{
+    color: orange;
+}
+
+.txt-color-rebeccapurple{
+    color: rebeccapurple;
+}
+
+.txt-color-888da8{
+    color: #888da8;
 }

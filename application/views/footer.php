@@ -24,6 +24,19 @@
 </div>
 </div>
 
+<script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("myBtn").click();
+        }
+    });
+    function abc() {
+        alert('t');
+    }
+</script>
+
 <!-- build:js assets/js/vendor.js -->
 <!-- plugins js -->
 <script src="<?php echo base_url(); ?>assets/bower_components/jquery/dist/jquery.min.js"></script>
@@ -72,6 +85,14 @@
 <!--<script src="--><?php //echo base_url(); ?><!--n/js/main.js"></script>-->
 
 <!--    upload-->
+
+<!--audio-->
+
+<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+<script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+
+<!--end audio-->
 
 <!-- build:js assets/js/vendor.js -->
 <!-- plugins js -->
@@ -139,8 +160,6 @@ if (!empty($UploadPlug)) {
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js.map"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.js"></script>
 
 <script>
 
@@ -161,6 +180,56 @@ if (!empty($UploadPlug)) {
 </script>
 
 <!-- sound -->
+
+<!--search-->
+
+<script>
+
+    $("#adv_search").hide();
+
+    function adv_search_hide_show()
+    {
+        $("#adv_search").toggle();
+
+    }
+
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("search_text").click();
+        }
+    });
+    function loading_search()
+    {
+        var searchedby = document.getElementById("myInput").value;
+//        alert(searchedby);
+
+        var data = {search_text:searchedby};
+        url = $("#base_url_hit").text() + 'search/advsearch';// "https://www.rapidtables.com/web/dev/jquery-redirect.htm";
+//        url = "https://www.rapidtables.com/web/dev/jquery-redirect.htm";
+
+        $(location).attr("href", url, data);
+
+//        $.post(url, data);
+    }
+
+//        $.ajax({
+//            type: "POST",
+//            url: site_url,
+//            data: {search_text:searchedby},
+//            dataType: "json",
+//            success: function(data)
+//            {
+//                parent.location = data['redirect_url'];
+//            }
+//
+//        });
+
+</script>
+
+<!--search-->
+
 </body>
 
 </html>

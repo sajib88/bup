@@ -86,26 +86,36 @@
                                 <span class="title">Upload</span>
                             </a>
                         </li>
+
+<!--                        <li class="nav-item">-->
+<!--                            <a class="" href="--><?php //echo base_url(); ?><!--search">-->
+<!--                                <span class="icon-holder">-->
+<!--										<i class="ti-search"></i>-->
+<!--									</span>-->
+<!--                                <span class="title">Search Result</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="" href="--><?php //echo base_url(); ?><!--search/advsearch">-->
+<!--                                <span class="icon-holder">-->
+<!--										<i class="ti-target"></i>-->
+<!--									</span>-->
+<!--                                <span class="title">Advanced Search</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+
                         <li class="nav-item">
-                            <a class="" href="<?php echo base_url(); ?>search">
+                            <a class="" href="<?php echo base_url(); ?>faq">
                                 <span class="icon-holder">
-										<i class="ti-search"></i>
+										<i class="ti ti-help"></i>
 									</span>
-                                <span class="title">Search Result</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="" href="<?php echo base_url(); ?>search/advsearch">
-                                <span class="icon-holder">
-										<i class="ti-target"></i>
-									</span>
-                                <span class="title">Advanced Search</span>
+                                <span class="title">FAQ</span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="" href="#">
                                 <span class="icon-holder">
-										<i class="ti-help"></i>
+										<i class="ti ti-help"></i>
 									</span>
                                 <span class="title">Help</span>
                             </a>
@@ -132,181 +142,16 @@
                                     <i class="search-icon-close ti-close pdd-right-10"></i>
                                 </a>
                             </li>
-                            <li class="search-input">
-                                <input class="form-control" type="text" placeholder="Search...">
-                                <div class="advanced-search">
-                                    <div class="search-wrapper">
-                                        <div class="pdd-vertical-10">
-                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
-													<i class="ti-user pdd-right-5"></i>
-													<span>People</span>
-                                            </span>
-                                            <ul class="list-unstyled list-info">
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-1.jpg'); ?>" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Jordan Hurst</span>
-                                                            <span class="sub-title">
-																	<i class="ti-location-pin"></i>
-																	<span>44 Shirley Ave. West Chicago</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-5.jpg'); ?>" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Jennifer Watkins</span>
-                                                            <span class="sub-title">
-																	<i class="ti-location-pin"></i>
-																	<span>514 S. Magnolia St. Orlando</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url(); ?>assets/images/avatars/thumb-4.jpg" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Michael Birch</span>
-                                                            <span class="sub-title">
-																	<i class="ti-location-pin"></i>
-																	<span>70 Bowman St. South Windsor</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="mrg-horizon-20 border top"></div>
-                                        <div class="pdd-vertical-10">
-                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
-													<i class="ti-rss pdd-right-5"></i>
-													<span>Post</span>
-                                            </span>
-                                            <ul class="list-unstyled list-info">
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/img-1.jpg'); ?>" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Artoo expresses his relief</span>
-                                                            <span class="sub-title">
-																	<span>Oh, thank goodness we're coming out...</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/img-2.jpg'); ?>" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Ready for some power?</span>
-                                                            <span class="sub-title">
-																	<span>Lord Vader. You may take Caption So...</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="search-footer">
-                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="search-input">
-                                <input class="form-control" type="text" placeholder="Advanced Search...">
-                                <div class="advanced-search">
-                                    <div class="search-wrapper">
-                                        <div class="pdd-vertical-10">
-                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
-													<i class="ti-user pdd-right-5"></i>
-													<span>People</span>
-                                            </span>
-                                            <ul class="list-unstyled list-info">
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-1.jpg'); ?>" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Jordan Hurst</span>
-                                                            <span class="sub-title">
-																	<i class="ti-location-pin"></i>
-																	<span>44 Shirley Ave. West Chicago</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/avatars/thumb-5.jpg'); ?>" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Jennifer Watkins</span>
-                                                            <span class="sub-title">
-																	<i class="ti-location-pin"></i>
-																	<span>514 S. Magnolia St. Orlando</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url(); ?>assets/images/avatars/thumb-4.jpg" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Michael Birch</span>
-                                                            <span class="sub-title">
-																	<i class="ti-location-pin"></i>
-																	<span>70 Bowman St. South Windsor</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="mrg-horizon-20 border top"></div>
-                                        <div class="pdd-vertical-10">
-                                            <span class="display-block mrg-vertical-5 pdd-horizon-20 text-gray">
-													<i class="ti-rss pdd-right-5"></i>
-													<span>Post</span>
-                                            </span>
-                                            <ul class="list-unstyled list-info">
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/img-1.jpg'); ?>" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Artoo expresses his relief</span>
-                                                            <span class="sub-title">
-																	<span>Oh, thank goodness we're coming out...</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="">
-                                                        <img class="thumb-img" src="<?php echo base_url('assets/images/img-2.jpg'); ?>" alt="">
-                                                        <div class="info">
-                                                            <span class="title">Ready for some power?</span>
-                                                            <span class="sub-title">
-																	<span>Lord Vader. You may take Caption So...</span>
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="search-footer">
-                                        <span>You are Searching for '<b class="text-dark"><span class="serach-text-bind"></span></b>'</span>
-                                    </div>
-                                </div>
+                            <li id="search_text" class="search-input">
+                                <div id="base_url_hit" style="display:none;"><?php echo base_url(); ?></div>
+                                <input id="myInput" class="form-control" type="text" placeholder="Search...">
+                                <button id="myBtn" onclick="loading_search()" style="display: none;"></button>
                             </li>
                         </ul>
                         <ul class="nav-right">
                             <li class="user-profile dropdown">
                                 <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img class="profile-img img-fluid" src="<?php echo base_url('assets/images/user.jpg'); ?>" alt="">
+<!--                                    <img class="profile-img img-fluid" src="--><?php //echo base_url('assets/images/user.jpg'); ?><!--" alt="">-->
                                     <div class="user-info">
                                         <span class="name pdd-right-5">Nate Leong</span>
                                         <i class="ti-angle-down font-size-10"></i>
@@ -800,4 +645,5 @@
                 <!-- Content Wrapper START -->
                 <div class="main-content">
                     <div class="container-fluid">
-						
+
+

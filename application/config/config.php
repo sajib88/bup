@@ -14,8 +14,8 @@
 | path to your installation.
 |
 */
- $config['base_url']	= "http://localhost/bup/";
-//$config['base_url']	= "http://bup.dev/";
+// $config['base_url']	= "http://localhost/bup/";
+$config['base_url']	= "http://dev.bup/";
 
 /*
 |--------------------------------------------------------------------------

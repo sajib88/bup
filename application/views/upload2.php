@@ -41,7 +41,7 @@
 
                         <div class="col-md-12 pdd-top-20 no-pdd-left">
                             <!-- The table listing the files available for upload/download -->
-                            <table id="dt-opt" class="table table-lg table-hover dataTable no-footer brdr-top-e5eaf3" role="grid" aria-describedby="dt-opt_info">
+                            <table id="dt-opt" class="table table-hover dataTable no-footer brdr-top-e5eaf3" role="grid" aria-describedby="dt-opt_info">
                                 <tbody class="files"></tbody>
                             </table>
                         </div>
@@ -75,49 +75,33 @@
                             <input placeholder="Enter Content Name" class="form-control" type="text">
                         </div>
 
-                        <div class="form-group row">
-                            <label for="form-1-5" class="col-md-12 col-sm-12 col-xs-12 control-label">Description</label>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <textarea class="form-control" rows="2" id="form-1-5"></textarea>
-                            </div>
-                        </div>
-
-                        <label>Tagging:</label>
-                        <select id="selectize-tags-1" name="person" multiple class="item-info">
-                            <!--                                <option value="" disabled selected>Select a person...</option>-->
-                            <!--                                <option value="1">Adam</option>-->
-                            <!--                                <option value="2" selected>Amalie</option>-->
-                            <!--                                <option value="3">Estefanía</option>-->
-                            <!--                                <option value="4">Adrian</option>-->
-                            <!--                                <option value="5">Wladimir</option>-->
-                            <!--                                <option value="6">Samantha</option>-->
-                            <!--                                <option value="7">Nicole</option>-->
-                            <!--                                <option value="8" selected>Michael</option>-->
-                        </select>
-
                         <label>Category:</label>
                         <select id="selectize-group">
                             <option value="">Select Category...</option>
                             <optgroup label="Climbing">
-                                <option value="pitons">Pitons</option>
-                                <option value="cams">Cams</option>
-                                <option value="nuts">Nuts</option>
-                                <option value="bolts">Bolts</option>
-                                <option value="stoppers">Stoppers</option>
-                                <option value="sling">Sling</option>
+                                <option value="pitons">Academic</option>
+                                <option value="cams">Sports</option>
+                                <option value="nuts">Library</option>
+                                <option value="nuts">Project Management</option>
+                                <option value="nuts">Science & Technology</option>
+                                <option value="nuts">Science & Technology</option>
+                                <option value="sling">Document</option>
+                                <option value="bolts">Music</option>
+                                <option value="stoppers">Video</option>
+                                <option value="sling">Image</option>
                             </optgroup>
+                        </select>
+
+                        <label>Tagging:</label>
+                            <select id="selectize-tags-1" name="person" multiple class="item-info">
                         </select>
 
                         <label>Events:</label>
                         <select id="selectize-tags-2" name="person" multiple class="item-primary">
-                            <option value="1" selected>Adam</option>
-                            <option value="2">Amalie</option>
-                            <option value="3" selected>Estefanía</option>
-                            <option value="4">Adrian</option>
-                            <option value="5" selected>Wladimir</option>
-                            <option value="6">Samantha</option>
-                            <option value="7" selected>Nicole</option>
-                            <option value="8">Michael</option>
+                            <option value="1" selected>Summer Program</option>
+                            <option value="2">Winter Excursion</option>
+                            <option value="3" selected>Science Fair</option>
+                            <option value="4">Annual Program</option>
                         </select>
 
                         <label>Recording Date:</label>
@@ -125,17 +109,25 @@
                             <i class="ti-time"></i>
                             <input type="text" class="form-control datepicker-1" placeholder="Datepicker" data-provide="datepicker">
                         </div>
+
+
+                        <div class="form-group row">
+                            <label for="form-1-5" class="col-md-12 col-sm-12 col-xs-12 control-label">Description</label>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <textarea class="form-control" rows="2" id="form-1-5"></textarea>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-md-12 col-sm-12 col-xs-12 txt-al-right no-pdd-right">
 
                         <button type="reset" class="btn btn-warning btn-md cancel">
-                            <i class="glyphicon glyphicon-ban-circle"></i>
+                            <i class="ti ti-close pdd-right-5"></i>
                             <span>Cancel upload</span>
                         </button>
 
-                        <button type="submit" class="btn btn-primary btn-md" disabled>
-                            <i class="glyphicon glyphicon-upload"></i>
+                        <button type="submit" class="btn btn-primary btn-md">
+                            <i class="ti ti-export pdd-right-5"></i>
                             <span>Start upload</span>
                         </button>
 
@@ -168,13 +160,13 @@
         <td>
             {% if (!i && !o.options.autoUpload) { %}
                 <button class="btn btn-primary btn-xs start" disabled>
-                    <i class="glyphicon glyphicon-upload"></i>
+                    <i class="ti ti-export"></i>
 <!--                    <span>Start</span>-->
                 </button>
             {% } %}
             {% if (!i) { %}
                 <button class="btn btn-warning btn-xs cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <i class="ti ti-close"></i>
 <!--                    <span>Cancel</span>-->
                 </button>
             {% } %}
