@@ -29,13 +29,12 @@
         <div class="sign-in">
             <div class="row no-mrg-horizon">
                 <div class="col-md-8 no-pdd-horizon d-none d-md-block">
-                    <div class="full-height bg" style="background-image: url(<?php echo base_url('assets/images/others/BBA-Study-in-Bangladesh.jpg'); ?>)">
-                        <div class="img-caption">
+                    <div class="full-height bg" style="background-image: url(<?php echo base_url('assets/images/others/bupbuilding.jpg'); ?>)">
+                        <div class="img-caption overlay">
                             <h1 class="caption-title">Welcome & Greetings!</h1>
                             <p class="caption-text">
-                                Welcome to the website of Bangladesh University of Professionals (BUP).
-                                It is a public university established on June 5, 2008 with a motto "Excellence Through knowledge".
-                                BUP with its own unique features is set up in a green landscape away from busy life of metropolitan city.
+                                Welcome to the website of <b>Bangladesh University of Professionals (BUP).
+                                    It is a public university established on June 5, 2008 </b> with a motto "Excellence Through knowledge". BUP with its own unique features is set up in a green landscape away from busy life of metropolitan city.
                                 The University provides a tranquil, pollution free, secured campus life.
                             </p>
                         </div>
@@ -74,10 +73,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="login-footer">
-                            <span class="font-size-13 pull-right pdd-top-10">Developed and Managed By <a href="http://osourcebd.com/">Osource Bangaldesh Ltd.</a></span>
-                        </div>
+
                     </div>
+                </div>
+                <div class="login-footer">
+                    <span class="font-size-13 pull-right pdd-top-10">Developed and Managed By <a href="http://osourcebd.com/">Osource Bangaldesh Ltd.</a></span>
                 </div>
             </div>
         </div>

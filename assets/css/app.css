@@ -3304,7 +3304,7 @@ a.card:hover, a.card:focus { -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.075)
 
 .jvectormap-zoomout { top: 40px; }
 
-.authentication .sign-in .img-caption { position: absolute; bottom: 0px; left: 0px; padding: 30px; max-width: 600px; }
+.authentication .sign-in .img-caption { position: absolute; bottom: 0px; left: 0px; padding: 30px; }
 
 .authentication .sign-in .img-caption .caption-title { color: #ffffff; font-size: 35px; font-weight: 300; }
 

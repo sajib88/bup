@@ -22,29 +22,23 @@ class Search extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('header');
-        $this->load->view('search');
-        /// $this->load->view('footer');
+//        $data['icon'] = 'ti-search';
+//        $data['name'] = 'Search Result';
+//        $data['search_text'] = $_POST['search_text'];
+//        $data['redirect_url'] = base_url() . 'search/advsearch';
+//        $this->load->view('header', $data);
+//        $this->load->view('advancedsearch');
     }
 
     public function advsearch()
     {
-        $this->load->view('header');
-        $this->load->view('advancedsearch');
-
-    }
-    public function dataupload()
-    {
-        $this->load->view('header');
-        $this->load->view('dataupload');
-        /// $this->load->view('footer');
-    }
-
-    public function afterupload()
-    {
-        $this->load->view('header');
-        $this->load->view('upload6');
-        echo 'abc';
+        if(!empty($_POST['searchedby'])) {
+            $data['icon'] = 'ti-search';
+            $data['name'] = 'Search Result';
+            $data1['search_text'] = $_POST['searchedby'];
+            $this->load->view('header', $data);
+            $this->load->view('advancedsearch', $data1);
+        }
     }
 
 }

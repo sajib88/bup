@@ -29,9 +29,16 @@
 	        $('.app').toggleClass("is-collapsed");
 	        e.preventDefault();
 	    });
-	}	
+	}
 
-	// Side Panel Toogle
+    function sidePanelAlwaysonToggle() {
+        $('.side-nav-toggle-always-on').on('click', function(e) {
+            $('.side-panel').toggleClass("side-panel-open");
+            e.preventDefault();
+        });
+    }
+
+    // Side Panel Toogle
 	function sidePanelToggle() {
 		$('.side-panel-toggle').on('click', function(e) {
 	        $('.side-panel').toggleClass("side-panel-open");

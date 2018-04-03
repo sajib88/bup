@@ -34,7 +34,9 @@ class Welcome extends CI_Controller {
 
     public function dashboard()
     {
-        $this->load->view('header');
+        $data['icon'] = 'ti-home';
+        $data['name'] = 'Dashboard';
+        $this->load->view('header', $data);
         $this->load->view('dashboard');
         $this->load->view('footer');
     }

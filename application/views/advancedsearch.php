@@ -2,7 +2,7 @@
 <div class="page-title col-md-12 no-pdd-horizon">
         <div class="col-md-6 col-sm-6 col-xs-12">
             <h4>Search Result
-                <span class="hide_text"><?php echo "for: " . ""?></span>
+                <span class="hide_text"><?php echo "for: " . $search_text ?></span>
             </h4>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 txt-al-right">
@@ -120,7 +120,7 @@
                             <td>
                                 <div class="text-center">
                                     <a href="#" class=""><i class="ti-eye pdd-right-5"></i></a>
-                                    <a href="#" class=""><i class="ti-pencil txt-color-orange pdd-right-5"></i></a>
+                                    <a href="#" class=""><i class="ti-pencil-alt txt-color-orange pdd-right-5"></i></a>
                                     <a href="#" class=""><i class="ti-download txt-color-green pdd-right-5"></i></a>
                                     <a href="#" class=""><i class="ti-close txt-color-red"></i></a>
                                 </div>
@@ -168,7 +168,7 @@
                             <td>
                                 <div class="text-center">
                                     <a href="#" class=""><i class="ti-eye pdd-right-5"></i></a>
-                                    <a href="#" class=""><i class="ti-pencil txt-color-orange pdd-right-5"></i></a>
+                                    <a href="#" class=""><i class="ti-pencil-alt txt-color-orange pdd-right-5"></i></a>
                                     <a href="#" class=""><i class="ti-download txt-color-green pdd-right-5"></i></a>
                                     <a href="#" class=""><i class="ti-close txt-color-red"></i></a>
                                 </div>

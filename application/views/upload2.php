@@ -18,7 +18,7 @@
 
                     <div class="col-md-12 col-sm-12 col-xs-12 no-pdd-left no-pdd-right txt-al-center">
 
-                        <label class="col-md-12 col-sm-12 col-xs-12 brdr-dash-e5eaf3 make_point ht-450 txt-al-center ver-mid pdd-top-145">
+                        <label class="col-md-12 col-sm-12 col-xs-12 brdr-dash-e5eaf3 make_point ht-450 txt-al-center ver-bottom pdd-top-145">
                             <input type="file" name="fileToUpload" id="fileToUpload[]" multiple />
                             <i class="ti-cloud-up font-size-90"></i><p class="font-size-20"><span class="brdr-top-e5eaf3">Drag and drop</span></p>
                         </label>

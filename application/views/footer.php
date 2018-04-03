@@ -189,46 +189,23 @@ if (!empty($UploadPlug)) {
 
     function adv_search_hide_show()
     {
-        $("#adv_search").toggle();
+        $("#adv_search").stop().slideToggle('slow');
 
     }
-
-    var input = document.getElementById("myInput");
-    input.addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode === 13) {
-            document.getElementById("search_text").click();
-        }
-    });
-    function loading_search()
-    {
-        var searchedby = document.getElementById("myInput").value;
-//        alert(searchedby);
-
-        var data = {search_text:searchedby};
-        url = $("#base_url_hit").text() + 'search/advsearch';// "https://www.rapidtables.com/web/dev/jquery-redirect.htm";
-//        url = "https://www.rapidtables.com/web/dev/jquery-redirect.htm";
-
-        $(location).attr("href", url, data);
-
-//        $.post(url, data);
-    }
-
-//        $.ajax({
-//            type: "POST",
-//            url: site_url,
-//            data: {search_text:searchedby},
-//            dataType: "json",
-//            success: function(data)
-//            {
-//                parent.location = data['redirect_url'];
-//            }
-//
-//        });
 
 </script>
 
 <!--search-->
+
+<!--faq-->
+<!-- page plugins js -->
+<script src="<?php echo base_url(); ?>assets/bower_components/sticky/jquery.sticky.js"></script>
+
+<!-- page js -->
+<script src="<?php echo base_url(); ?>assets/js/extras/faq.js"></script>
+
+<!--faq-->
+
 
 </body>
 
