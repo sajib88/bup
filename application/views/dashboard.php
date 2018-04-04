@@ -1,11 +1,5 @@
 
 
-<div class="page-title">
-    <h4>All Contents</h4>
-</div>
-
-
-
 <div class="row">
 
 
@@ -18,7 +12,7 @@
 
             <div class="card-heading">
                 <h4 class="card-title inline-block pdd-top-5">Videos</h4>
-                <a href="" class="btn btn-default pull-right no-mrg">All Videos File list</a>
+                <a href="" class="btn btn-default pull-right no-mrg">All Videos</a>
             </div>
 
 
@@ -92,7 +86,7 @@
 
             <div class="card-heading">
                 <h4 class="card-title inline-block pdd-top-5">Photos</h4>
-                <a href="" class="btn btn-default pull-right no-mrg">All Photos File list</a>
+                <a href="" class="btn btn-default pull-right no-mrg">All Photos</a>
             </div>
 
             <a href="<?php echo base_url(); ?>assets/images/others/BUP-Campus.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
@@ -159,7 +153,7 @@
             <div class="card">
                 <div class="card-heading">
                     <h4 class="card-title inline-block pdd-top-5">Audios</h4>
-                    <a href="" class="btn btn-default pull-right no-mrg">All Audios File list</a>
+                    <a href="" class="btn btn-default pull-right no-mrg">All Audios</a>
                 </div>
                 <div class="pdd-horizon-20 pdd-vertical-5 mrg-btm-30">
                     <div class="overflow-y-auto relative scrollable" style="max-height: 381px">
@@ -455,7 +449,7 @@
                     <div class="row">
                         <video id="my-video" class="video-js" controls preload="auto" height="305px"
                                poster="<?php echo base_url(); ?>assets/video/StoryVideo_PosterFrame.jpg" data-setup="{}">
-                            <source id="play_video" src="" type='video/mp4'>
+                            <source id="play_video" src="<?php echo base_url(); ?>assets/video/bup_ad2.mp4" type='video/mp4'>
                             <source src="MY_VIDEO.webm" type='<?php echo base_url(); ?>assets/video/video/webm'>
                             <p class="vjs-no-js">
                                 To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -496,13 +490,13 @@
 
     function call_modal(file_name)
     {
-        var url = '<?php echo base_url(); ?>assets/video/' + file_name;
+//        var url = '<?php //echo base_url(); ?>//assets/video/' + file_name;
 //        alert(file_name);
-        video.pause();
-        $('#play_video').attr('src', url);
+//        video.pause();
+//        $('#play_video').attr('src', url);
         $('#modal-lg').modal('show');
-        video.load();
-        video.play();
+//        video.load();
+//        video.play();
 
     }
 

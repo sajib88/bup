@@ -135,7 +135,7 @@
             <!-- Header START -->
             <div class="header navbar">
                 <div class="header-container">
-                    <div class="col-md-12 no-pdd-horizon">
+                    <div class="col-md-12 no-pdd-right">
                         <div class="col-md-3 no-pdd-horizon width-100">
                             <ul class="nav-left font-size-19 pdd-top-15">
                                 <li class="txt-color-0f9aee">
