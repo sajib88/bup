@@ -121,12 +121,12 @@
 
                     <div class="col-md-12 col-sm-12 col-xs-12 txt-al-right no-pdd-right">
 
-                        <button type="reset" class="btn btn-warning btn-md cancel">
+                        <button type="reset" class="btn btn-default btn-md cancel">
                             <i class="ti ti-close pdd-right-5"></i>
                             <span>Cancel upload</span>
                         </button>
 
-                        <button type="submit" class="btn btn-primary btn-md">
+                        <button type="submit" class="btn btn-info btn-md">
                             <i class="ti ti-export pdd-right-5"></i>
                             <span>Start upload</span>
                         </button>
@@ -159,13 +159,13 @@
         </td>
         <td>
             {% if (!i && !o.options.autoUpload) { %}
-                <button class="btn btn-primary btn-xs start" disabled>
+                <button class="btn btn-info btn-xs start" disabled>
                     <i class="ti ti-export"></i>
 <!--                    <span>Start</span>-->
                 </button>
             {% } %}
             {% if (!i) { %}
-                <button class="btn btn-warning btn-xs cancel">
+                <button class="btn btn-default btn-xs cancel">
                     <i class="ti ti-close"></i>
 <!--                    <span>Cancel</span>-->
                 </button>
@@ -203,14 +203,14 @@
         <td>
             {% if (file.deleteUrl) { %}
                 <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
-                    <i class="glyphicon glyphicon-trash"></i>
-                    <span>Delete</span>
+                    <i class="ti ti-trash"></i>
+<!--                    <span>Delete</span>-->
                 </button>
                 <input type="checkbox" name="delete" value="1" class="toggle">
             {% } else { %}
-                <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
-                    <span>Cancel</span>
+                <button class="btn btn-default cancel">
+                    <i class="ti ti-close"></i>
+<!--                    <span>Cancel</span>-->
                 </button>
             {% } %}
         </td>

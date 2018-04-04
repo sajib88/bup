@@ -110,19 +110,19 @@
                     <!--                        </li>-->
 
                     <li class="nav-item">
-                        <a class="" href="#">
-                                <span class="icon-holder">
-										<i class="ti ti-info-alt"></i>
-									</span>
-                            <span class="title">Help</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a class="" href="<?php echo base_url(); ?>faq">
                                 <span class="icon-holder">
 										<i class="ti ti-help"></i>
 									</span>
                             <span class="title">FAQ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="" href="<?php echo base_url(); ?>faq/support">
+                                <span class="icon-holder">
+										<i class="ti ti-shine"></i>
+									</span>
+                            <span class="title">Support</span>
                         </a>
                     </li>
                 </ul>
@@ -138,7 +138,7 @@
                     <div class="col-md-12 no-pdd-horizon">
                         <div class="col-md-3 no-pdd-horizon width-100">
                             <ul class="nav-left font-size-19 pdd-top-15">
-                                <li class="txt-color-0c7bbe">
+                                <li class="txt-color-0f9aee">
                                     <i class="<?php echo $icon ?>"></i>
                                     <span><b><?php echo $name ?></b></span>
                                 </li>
@@ -163,7 +163,7 @@
 
                                 <li class="user-profile dropdown">
                                     <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                                        <!--                                    <img class="profile-img img-fluid" src="--><?php //echo base_url('assets/images/user.jpg'); ?><!--" alt="">-->
+                                        <!--  <img class="profile-img img-fluid" src="--><?php //echo base_url('assets/images/user.jpg'); ?><!--" alt="">-->
                                         <div class="user-info">
                                             <span class="name pdd-right-5">Nate Leong</span>
                                             <i class="ti-angle-down font-size-10"></i>

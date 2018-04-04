@@ -1,5 +1,5 @@
 .txt-al-left{
-    text-align: left;
+    text-align: left !important;
 }
 
 .txt-al-center{
@@ -138,6 +138,11 @@ input[type=file] {
 .txt-color-0c7bbe{
     color: #0c7bbe !important;
 }
+
+.txt-color-0f9aee{
+    color: #0f9aee !important;
+}
+
 
 
 .box{

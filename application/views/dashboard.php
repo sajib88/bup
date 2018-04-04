@@ -25,7 +25,8 @@
                     <div class="pdd-horizon-0 pdd-vertical-0">
                         <video id="my-video" class="video-js" controls preload="auto" height="278px"
                                poster="<?php echo base_url(); ?>assets/video/StoryVideo_PosterFrame.jpg" data-setup="{}">
-                            <source src="<?php echo base_url(); ?>assets/video/movie.mp4" type='video/mp4'>
+                            <source src="<?php echo base_url(); ?>assets/video/bup_at_a_glance.mp4" type='video/mp4'>
+<!--                            <source src="--><?php //echo base_url(); ?><!--assets/video/movie.mp4" type='video/mp4'>-->
                             <source src="MY_VIDEO.webm" type='<?php echo base_url(); ?>assets/video/video/webm'>
                             <p class="vjs-no-js">
                                 To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -36,7 +37,7 @@
 
             <div class="pdd-horizon-5 pdd-vertical-0 pdd-top-25 pdd-btm-5">
                 <figure class="col-md-3 masonry-brick mrg-btm-30">
-                    <a href="#" data-toggle="modal" data-target="#modal-lg" class="gallery-item" data-size="700x1000">
+                    <a href="#" data-toggle="modal" onclick="call_modal('bup_at_a_glance.mp4')" class="gallery-item" data-size="700x1000">
                         <img class="img-fluid" src="<?php echo base_url(); ?>/assets/video/smallcover.jpg" alt="">
                         <div class="overlay">
                             <div class="overlay-content">
@@ -85,7 +86,7 @@
         </div>
 
 
-    <!--audio-->
+    <!--Images-->
     <div class="col-md-6 col-sm-6 col-xm-12">
         <div class="card">
 
@@ -94,8 +95,8 @@
                 <a href="" class="btn btn-default pull-right no-mrg">All Photos File list</a>
             </div>
 
-            <a href="<?php echo base_url(); ?>assets/images/others/img-6.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
-            <div class="overlay-dark bg" style="background-image: url('<?php echo base_url(); ?>/assets/images/others/img-6.jpg')">
+            <a href="<?php echo base_url(); ?>assets/images/others/BUP-Campus.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
+            <div class="overlay-dark bg" style="background-image: url('<?php echo base_url(); ?>/assets/images/others/BUP-Campus.jpg')">
                 <div class="card-block imageblok">
                     <div class="mrg-top-150">
 
@@ -110,24 +111,24 @@
 
             <div class="pdd-horizon-5 pdd-vertical-0 pdd-top-25 pdd-btm-5">
                 <figure class="col-md-3 masonry-brick mrg-btm-30">
-                    <a href="<?php echo base_url(); ?>assets/images/others/img-25.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/others/img-25.jpg" alt="">
+                    <a href="<?php echo base_url(); ?>assets/images/dashboard/facultyday.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/dashboard/facultyday.jpg" alt="">
                         <div class="overlay">
 
                         </div>
                     </a>
                 </figure>
                 <figure class="col-md-3 masonry-brick mrg-btm-30">
-                    <a href="<?php echo base_url(); ?>assets/images/others/img-17.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/others/img-17.jpg" alt="">
+                    <a href="<?php echo base_url(); ?>assets/images/dashboard/facultydayy.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/dashboard/facultydayy.jpg" alt="">
                         <div class="overlay">
 
                         </div>
                     </a>
                 </figure>
                 <figure class="col-md-3 masonry-brick mrg-btm-30">
-                    <a href="<?php echo base_url(); ?>assets/images/others/img-18.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/others/img-18.jpg" alt="">
+                    <a href="<?php echo base_url(); ?>assets/images/dashboard/spring.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/dashboard/spring.jpg" alt="">
                         <div class="overlay">
 
                         </div>
@@ -135,8 +136,8 @@
                 </figure>
 
                 <figure class="col-md-3 masonry-brick mrg-btm-30">
-                    <a href="<?php echo base_url(); ?>assets/images/others/img-27.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
-                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/others/img-27.jpg" alt="">
+                    <a href="<?php echo base_url(); ?>assets/images/dashboard/lesson.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
+                        <img class="img-fluid" src="<?php echo base_url(); ?>assets/images/dashboard/lesson.jpg" alt="">
                         <div class="overlay">
 
                         </div>
@@ -152,7 +153,7 @@
 
 <div class="row">
 
-    <!--Document-->
+    <!--Audio-->
         <div class="col-md-6 col-sm-6 col-xm-12">
 
             <div class="card">
@@ -251,7 +252,7 @@
             </div>
         </div>
 
-    <!--Image-->
+    <!--Document-->
     <div class="col-md-6 col-sm-6 col-xm-12">
         <div class="card">
             <div class="card-heading">
@@ -454,7 +455,7 @@
                     <div class="row">
                         <video id="my-video" class="video-js" controls preload="auto" height="305px"
                                poster="<?php echo base_url(); ?>assets/video/StoryVideo_PosterFrame.jpg" data-setup="{}">
-                            <source src="<?php echo base_url(); ?>assets/video/movie.mp4" type='video/mp4'>
+                            <source id="play_video" src="" type='video/mp4'>
                             <source src="MY_VIDEO.webm" type='<?php echo base_url(); ?>assets/video/video/webm'>
                             <p class="vjs-no-js">
                                 To view this video please enable JavaScript, and consider upgrading to a web browser that
@@ -490,6 +491,22 @@
         </div>
     </div>
 </div>
+
+<script>
+
+    function call_modal(file_name)
+    {
+        var url = '<?php echo base_url(); ?>assets/video/' + file_name;
+//        alert(file_name);
+        video.pause();
+        $('#play_video').attr('src', url);
+        $('#modal-lg').modal('show');
+        video.load();
+        video.play();
+
+    }
+
+</script>
 
 <?php
 // --- define plugin js
