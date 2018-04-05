@@ -61,3 +61,7 @@ $(function () {
         $('.progress-radial').removeClass('progress-'+parseInt(curtime-1));
     });
 });
+
+$(document).ready(function(){
+    $('audio').mkhPlayer();
+});

@@ -9,40 +9,15 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/images/logo/favicon.png">
 
+    <!-- plugins css -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/netdna/bootstrap.min.css">
-    <!--    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
-
-    <!-- blueimp Gallery styles -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/jquery.fileupload.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/jquery.fileupload-ui.css">
-    <!--upload end-->
-
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
     <!-- page plugins css -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bower-jvectormap/jquery-jvectormap-1.2.2.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/nvd3/build/nv.d3.min.css" />
-
-    <!-- FORM ELEMENTS CSS-->
-    <!-- plugins css -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/PACE/themes/blue/pace-theme-minimal.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
-
-    <!-- page plugins css -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/selectize/dist/css/selectize.default.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap-daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/summernote/dist/summernote.css" />
-    <!-- FORM ELEMENTS CSS-->
-
-    <!-- plugins css -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/PACE/themes/blue/pace-theme-minimal.css" />
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
-
-    <!-- page plugins css -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets//bower_components/datatables/media/css/jquery.dataTables.css" />
 
     <!-- core css -->
     <link href="<?php echo base_url(); ?>assets/css/ei-icon.css" rel="stylesheet">
@@ -51,6 +26,31 @@
     <link href="<?php echo base_url(); ?>assets/css/animate.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/css/app.css" rel="stylesheet">
 
+    <!-- blueimp Gallery styles -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/jquery.fileupload.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/upload/css/jquery.fileupload-ui.css">
+    <!--upload end-->
+
+    <!-- image light box -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/dashboard/lightbox/ekko-lightbox.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/dashboard/lightbox/ekko-lightbox.min.css">
+    <!-- image light box -->
+
+    <!-- sound-->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/bower_components/audio/src/css/mkhplayer.default.css"/>
+    <!-- sound-->
+
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/selectize/dist/css/selectize.default.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/summernote/dist/summernote.css" />
+
+    <!-- page plugins css -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets//bower_components/datatables/media/css/jquery.dataTables.css" />
+
+    <!-- custom css -->
     <link href="<?php echo base_url(); ?>assets/css/custome.css" rel="stylesheet">
 
 
@@ -275,53 +275,6 @@
                                             </div>
                                             <span class="status online"></span>
                                         </a>
-                                    </div>
-                                    <div class="chat-section">
-                                        <?php /*
-                                            <h5 class="chat-title">Members</h5>
-                                            <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-4.jpg" alt="">
-                                                <div class="user-info">
-                                                    <span class="user-name pdd-top-5">Samuel Field</span>
-                                                </div>
-                                                <span class="status"></span>
-                                            </a>
-                                            <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-5.jpg" alt="">
-                                                <div class="user-info">
-                                                    <span class="user-name pdd-top-5">Jennifer Watkins</span>
-                                                </div>
-                                                <span class="status"></span>
-                                            </a>
-                                            <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-6.jpg" alt="">
-                                                <div class="user-info">
-                                                    <span class="user-name pdd-top-5">Michael Birch</span>
-                                                </div>
-                                                <span class="status"></span>
-                                            </a>
-                                            <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-10.jpg" alt="">
-                                                <div class="user-info">
-                                                    <span class="user-name pdd-top-5">Renee Edwards</span>
-                                                </div>
-                                                <span class="status"></span>
-                                            </a>
-                                            <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-11.jpg" alt="">
-                                                <div class="user-info">
-                                                    <span class="user-name pdd-top-5">Kathy White</span>
-                                                </div>
-                                                <span class="status"></span>
-                                            </a>
-                                            <a href="javascript:void(0);" class="chat-user chat-toggle">
-                                                <img class="thumb-img" src="assets/images/avatars/thumb-9.jpg" alt="">
-                                                <div class="user-info">
-                                                    <span class="user-name pdd-top-5">Daryl Ellis</span>
-                                                </div>
-                                                <span class="status"></span>
-                                            </a>
-                                            */ ?>
                                     </div>
                                 </div>
                                 <div class="conversation">

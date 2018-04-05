@@ -182,7 +182,19 @@
     </div>
 </div>
 
-<?php require_once ('footer.php'); ?>
+<?php
+// --- define plugin js
+$mtPagePlugins = array(
+//    'assets/bower_components/datatables/media/js/jquery.dataTables.js'
+
+);
+
+//---- define page javascript
+$mtPageScripts = array("page_javascript/search/search.js");
+
+require_once ('footer.php');
+
+?>
 
 
 

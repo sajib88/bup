@@ -222,7 +222,7 @@
 
 <?php
 // --- define plugin js
-$UploadPlug = array(
+$mtPagePlugins = array(
     '/assets/js/upload/js/vendor/jquery.ui.widget.js',
     'n/js/tmpl.min.js',
     'n/js/load-image.all.min.js',
@@ -236,26 +236,16 @@ $UploadPlug = array(
     'n/js/jquery.fileupload-video.js',
     'n/js/jquery.fileupload-validate.js',
     'assets/js/upload/js/jquery.fileupload-ui.js',
-    'assets/js/upload/js/main.js'
-
-//    'assets/bower_components/jquery/dist/jquery.min.js',
-//    'assets/bower_components/popper.js/dist/umd/popper.min.js',
-//    'assets/bower_components/bootstrap/dist/js/bootstrap.js',
-//    'assets/bower_components/PACE/pace.min.js',
-//    'assets/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
-//    'assets/js/app.js',
-//    'assets/bower_components/selectize/dist/js/standalone/selectize.min.js',
-//    'assets/bower_components/moment/min/moment.min.js',
-//    'assets/bower_components/bootstrap-daterangepicker/daterangepicker.js',
-//    'assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
-//    'assets/bower_components/bootstrap-timepicker/js/bootstrap-timepicker.js',
-//    'assets/bower_components/summernote/dist/summernote.min.js',
-//    'assets/js/forms/form-elements.js'
+    'assets/js/upload/js/main.js',
+//    'assets/js/table/data-table.js',
+    'assets/bower_components/datatables/media/js/jquery.dataTables.js'
 
 );
 
 //---- define page javascript
 //$mtPageScripts = array("page_javascript/dashboard/image.js", "page_javascript/dashboard/audio.js");
+
+//$mtPageScripts = array("page_javascript/dashboard/lightbox.js");
 
 require_once ('footer.php');
 

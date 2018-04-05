@@ -66,3 +66,19 @@
         </div>
     </div>
 </div>
+
+
+<?php
+// --- define plugin js
+//$UploadPlug = array(
+//    'assets/bower_components/sticky/jquery.sticky.js',
+//    'assets/js/extras/faq.js'
+//);
+
+//---- define page javascript
+//$mtPageScripts = array("page_javascript/dashboard/image.js", "page_javascript/dashboard/audio.js");
+
+
+require_once ('footer.php');
+
+?>

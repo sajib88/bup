@@ -16,18 +16,18 @@
             </div>
 
 
-                    <div class="pdd-horizon-0 pdd-vertical-0">
-                        <video id="my-video" class="video-js" controls preload="auto" height="278px"
-                               poster="<?php echo base_url(); ?>assets/video/StoryVideo_PosterFrame.jpg" data-setup="{}">
-                            <source src="<?php echo base_url(); ?>assets/video/bup_at_a_glance.mp4" type='video/mp4'>
-<!--                            <source src="--><?php //echo base_url(); ?><!--assets/video/movie.mp4" type='video/mp4'>-->
-                            <source src="MY_VIDEO.webm" type='<?php echo base_url(); ?>assets/video/video/webm'>
-                            <p class="vjs-no-js">
-                                To view this video please enable JavaScript, and consider upgrading to a web browser that
-                                <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                            </p>
-                        </video>
-                    </div>
+            <div class="pdd-horizon-0 pdd-vertical-0">
+                <video id="my-video" class="video-js" controls preload="auto" height="278px"
+                       poster="<?php echo base_url(); ?>assets/video/StoryVideo_PosterFrame.jpg" data-setup="{}">
+                    <source src="<?php echo base_url(); ?>assets/video/bup_at_a_glance.mp4" type='video/mp4'>
+                    <!--                            <source src="--><?php //echo base_url(); ?><!--assets/video/movie.mp4" type='video/mp4'>-->
+                    <source src="MY_VIDEO.webm" type='<?php echo base_url(); ?>assets/video/video/webm'>
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a web browser that
+                        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+            </div>
 
             <div class="pdd-horizon-5 pdd-vertical-0 pdd-top-25 pdd-btm-5">
                 <figure class="col-md-3 masonry-brick mrg-btm-30">
@@ -76,8 +76,8 @@
 
 
 
-            </div>
         </div>
+    </div>
 
 
     <!--Images-->
@@ -90,13 +90,13 @@
             </div>
 
             <a href="<?php echo base_url(); ?>assets/images/others/BUP-Campus.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
-            <div class="overlay-dark bg" style="background-image: url('<?php echo base_url(); ?>/assets/images/others/BUP-Campus.jpg')">
-                <div class="card-block imageblok">
-                    <div class="mrg-top-150">
+                <div class="overlay-dark bg" style="background-image: url('<?php echo base_url(); ?>/assets/images/others/BUP-Campus.jpg')">
+                    <div class="card-block imageblok">
+                        <div class="mrg-top-150">
 
+                        </div>
                     </div>
                 </div>
-            </div>
             </a>
 
 
@@ -148,15 +148,15 @@
 <div class="row">
 
     <!--Audio-->
-        <div class="col-md-6 col-sm-6 col-xm-12">
+    <div class="col-md-6 col-sm-6 col-xm-12">
 
-            <div class="card">
-                <div class="card-heading">
-                    <h4 class="card-title inline-block pdd-top-5">Audios</h4>
-                    <a href="" class="btn btn-default pull-right no-mrg">All Audios</a>
-                </div>
-                <div class="pdd-horizon-20 pdd-vertical-5 mrg-btm-30">
-                    <div class="overflow-y-auto relative scrollable" style="max-height: 381px">
+        <div class="card">
+            <div class="card-heading">
+                <h4 class="card-title inline-block pdd-top-5">Audios</h4>
+                <a href="" class="btn btn-default pull-right no-mrg">All Audios</a>
+            </div>
+            <div class="pdd-horizon-20 pdd-vertical-5 mrg-btm-30">
+                <div class="overflow-y-auto relative scrollable" style="max-height: 381px">
                     <table class="table table-lg table-hover">
                         <tbody>
                         <tr>
@@ -240,11 +240,11 @@
                         </tbody>
                     </table>
 
-                    </div>
-
                 </div>
+
             </div>
         </div>
+    </div>
 
     <!--Document-->
     <div class="col-md-6 col-sm-6 col-xm-12">
@@ -420,13 +420,13 @@
 </div>
 
 <style>
-.smallvjs{
-    width: 105px !important;
-    height: 65px  !important;
-}
-.video-js {
-    width: 100% !important;
-}
+    .smallvjs{
+        width: 105px !important;
+        height: 65px  !important;
+    }
+    .video-js {
+        width: 100% !important;
+    }
     .imageblok{
         padding: 66px;
     }
@@ -504,9 +504,20 @@
 
 <?php
 // --- define plugin js
-//$mtPagePlugins = array('assets/js/dashboard/jquery-1.11.1.min.js', 'assets/js/dashboard/jquery-1.10.2.min.js', '/assets/js/dashboard/bootstrap.min.js', 'assets/js/dashboard/dashboard.js');
-$mtPagePlugins = array('/assets/js/dashboard/bootstrap.min.js', '/assets/js/dashboard/dashboard.js');
+$mtPagePlugins = array(
+//        'assets/bower_components/datatables/media/js/jquery.dataTables.js',
+//        'assets/js/table/data-table.js',
+        //'assets/js/dashboard/bootstrap.min.js',
+        'assets/js/video/video.js',
+        'assets/js/video/videojs-ie8.min.js',
+        'assets/js/image/ekko-lightbox.js',
+        'assets/js/image/ekko-lightbox.js.map',
+        'assets/bower_components/audio/src/js/jquery.mkhplayer.js'
+
+);
 
 //---- define page javascript
-$mtPageScripts = array("/page_javascript/dashboard/image.js", "/page_javascript/dashboard/audio.js");
+$mtPageScripts = array("page_javascript/dashboard/image.js", "page_javascript/dashboard/lightbox.js", "/page_javascript/dashboard/audio.js");
+
+require_once ('footer.php');
 ?>

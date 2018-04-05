@@ -38,7 +38,7 @@ class Welcome extends CI_Controller {
         $data['name'] = 'Dashboard';
         $this->load->view('header', $data);
         $this->load->view('dashboard');
-        $this->load->view('footer');
+//        $this->load->view('footer');
     }
 	
 }
