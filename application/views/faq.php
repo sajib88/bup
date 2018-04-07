@@ -1,4 +1,5 @@
-<div class="page-title">
+
+<div class="page-title pdd-bottom-9">
     <h4>FAQ</h4>
 </div>
 

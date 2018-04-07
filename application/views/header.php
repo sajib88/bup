@@ -75,54 +75,52 @@
                     </div>
                 </div>
                 <ul class="side-nav-menu scrollable">
-                    <li class="nav-item active">
+                    <li class="nav-item border-bottom active">
                         <a class="mrg-top-30" href="<?php echo base_url(); ?>welcome/dashboard">
-                                <span class="icon-holder">
-										<i class="ti-home"></i>
-									</span>
-                            <span class="title">Dashboard</span>
+                                <h1>
+                                    <small class="font-size-19">
+                                        <span class="icon-holder">
+                                            <i class="ti-home"></i>
+                                        </span>
+                                        <span class="title">Dashboard</span>
+                                    </small>
+                                </h1>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item border-bottom">
                         <a class="" href="<?php echo base_url(); ?>upload">
-                                <span class="icon-holder">
-										<i class="ti-upload"></i>
-									</span>
-                            <span class="title">Upload</span>
+                            <h1>
+                                <small class="font-size-19">
+                                    <span class="icon-holder">
+                                                <i class="ti-upload"></i>
+                                            </span>
+                                    <span class="title">Upload</span>
+                                </small>
+                            </h1>
                         </a>
                     </li>
-
-                    <!--                        <li class="nav-item">-->
-                    <!--                            <a class="" href="--><?php //echo base_url(); ?><!--search">-->
-                    <!--                                <span class="icon-holder">-->
-                    <!--										<i class="ti-search"></i>-->
-                    <!--									</span>-->
-                    <!--                                <span class="title">Search Result</span>-->
-                    <!--                            </a>-->
-                    <!--                        </li>-->
-                    <!--                        <li class="nav-item">-->
-                    <!--                            <a class="" href="--><?php //echo base_url(); ?><!--search/advsearch">-->
-                    <!--                                <span class="icon-holder">-->
-                    <!--										<i class="ti-target"></i>-->
-                    <!--									</span>-->
-                    <!--                                <span class="title">Advanced Search</span>-->
-                    <!--                            </a>-->
-                    <!--                        </li>-->
-
-                    <li class="nav-item">
+                    <li class="nav-item border-bottom">
                         <a class="" href="<?php echo base_url(); ?>faq">
-                                <span class="icon-holder">
-										<i class="ti ti-help"></i>
-									</span>
-                            <span class="title">FAQ</span>
+                            <h1>
+                                <small class="font-size-19">
+                                    <span class="icon-holder">
+                                                <i class="ti ti-help"></i>
+                                            </span>
+                                    <span class="title">FAQ</span>
+                                </small>
+                            </h1>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item border-bottom">
                         <a class="" href="<?php echo base_url(); ?>faq/support">
-                                <span class="icon-holder">
+                            <h1>
+                                <small class="font-size-19">
+                                    <span class="icon-holder">
 										<i class="ti ti-shine"></i>
 									</span>
-                            <span class="title">Support</span>
+                                    <span class="title">Support</span>
+                                </small>
+                            </h1>
                         </a>
                     </li>
                 </ul>
@@ -136,27 +134,37 @@
             <div class="header navbar">
                 <div class="header-container">
                     <div class="col-md-12 no-pdd-right">
-                        <div class="col-md-3 no-pdd-horizon width-100">
-                            <ul class="nav-left font-size-19 pdd-top-15">
-                                <li class="txt-color-0f9aee">
-                                    <i class="<?php echo $icon ?>"></i>
-                                    <span><b><?php echo $name ?></b></span>
+                        <div class="col-md-2 no-pdd-horizon width-100">
+                            <ul class="nav-left pdd-top-15">
+                                <li>
+                                    <h3 class="txt-color-0f9aee"><i class="<?php echo $icon ?>"></i>
+                                        <span><?php echo $name ?></span></h3>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="col-md-6">
-                            <ul id="search_text" class="nav-right txt-al-center width-100 pdd-top-10">
-                                <form id="search_data" class="btn-group width-100" action="<?php echo base_url('Search/advsearch') ?>" method="post">
-                                    <div id="base_url_hit" style="display:none;"><?php echo base_url(); ?></div>
-                                    <input id="myInput" class="form-control" name="searchedby" type="text" placeholder="Search...">
+                        <div class="col-md-7">
+                            <ul id="search_text" class="col-md-12 nav-right no-pdd-horizon txt-al-center width-100 pdd-top-10">
+                                <form id="search_data" class="width-100" action="<?php echo base_url('search/advsearch') ?>" method="post">
+                                    <div class="col-md-10 btn-group no-pdd-horizon">
+                                        <input id="myInput" class="form-control" name="searchedby" type="text" placeholder="Search...">
 
-                                    <button id="myBtn" class="btn btn-info" type="submit">
-                                        <i class="ti-search"></i>
-                                    </button>
+                                        <button id="myBtn" class="btn btn-info" type="submit">
+                                            <i class="ti-search"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-2 no-pdd-horizon width-100 pdd-top-15">
+                                        <ul class="nav-left">
+                                            <a href="<?php echo base_url('search/advsearch') ?>">
+                                                <h3><small>Advance Search</small></h3>
+                                            </a>
+                                        </ul>
+                                    </div>
                                 </form>
                             </ul>
                         </div>
+
+
 
                         <div class="col-md-3 no-pdd-horizon">
                             <ul class="nav-right">
@@ -190,7 +198,7 @@
                                         <!--                                    </li>-->
                                         <li role="separator" class="divider"></li>
                                         <li>
-                                            <a href="">
+                                            <a href="<?php echo base_url('') ?>">
                                                 <i class="ti-power-off pdd-right-10"></i>
                                                 <span>Logout</span>
                                             </a>

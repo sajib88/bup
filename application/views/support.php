@@ -1,4 +1,5 @@
-<div class="page-title">
+
+<div class="page-title pdd-bottom-9">
     <h4>Send Us</h4>
 </div>
 
@@ -10,25 +11,25 @@
             <h4 class="card-title"></h4>
             <form class="form-horizontal">
                 <div class="form-group row">
-                    <label for="form-1-1" class="col-md-2 control-label txt-al-left">Name</label>
+                    <h1 for="form-1-1" class="col-md-2 txt-al-left"><small>Name</small></h1>
                     <div class="col-md-10">
                         <input type="text" class="form-control" id="form-1-1" placeholder="Name">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="form-1-3" class="col-md-2 control-label txt-al-left">Email</label>
+                    <h1 for="form-1-1" class="col-md-2 txt-al-left"><small>Email</small></h1>
                     <div class="col-md-10">
                         <input type="email" class="form-control" id="form-1-3" placeholder="Email address">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="form-1-3" class="col-md-2 control-label txt-al-left">Phone</label>
+                    <h1 for="form-1-1" class="col-md-2 txt-al-left"><small>Phone</small></h1>
                     <div class="col-md-10">
                         <input type="email" class="form-control" id="form-1-3" placeholder="Contact number">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="form-1-5" class="col-md-2 control-label txt-al-left">Message</label>
+                    <h1 for="form-1-1" class="col-md-2 txt-al-left"><small>Message</small></h1>
                     <div class="col-md-10">
                         <textarea class="form-control" placeholder="About your queries" rows="3" id="form-1-5"></textarea>
                     </div>
@@ -55,13 +56,15 @@
     <div class="col-md-4 col-sm-4 col-xs-12">
         <div class="card">
             <div class="card-block">
-                <h3 class="card-title">Before Asking Us</h3>
+                <h3 class="card-title text-danger">Before Asking Us</h3>
 
-                <h5 class="txt-al-left">1. Read the FAQ First!</h5>
-                <h5 class="txt-al-left mrg-top-20">2. Make sure that your query is not irrelivent from this system</h5>
-                <h5 class="txt-al-left mrg-top-20">3. Irrelivent query will be ignored, your id might be blocked for querying next time</h5>
-                <h5 class="txt-al-left mrg-top-20">4. You will get a reply soon</h5>
-                <h5 class="txt-al-left mrg-top-20">5. Notifying any system error, immediate action will be taken for</h5>
+                <ul class="list arrow bullet-danger text-dark">
+                    <li>Read the FAQ First!</li>
+                    <li>Make sure that your query is not irrelivent from this system</li>
+                    <li>Irrelivent query will be ignored, your id might be blocked for querying next time</li>
+                    <li>You will get a reply soon</li>
+                    <li>Notifying any system error, immediate action will be taken for</li>
+                </ul>
             </div>
         </div>
     </div>

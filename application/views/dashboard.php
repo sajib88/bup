@@ -1,9 +1,9 @@
 
+<div class="page-title pdd-bottom-9">
+    <h4></h4>
+</div>
 
 <div class="row">
-
-
-
 
     <!--video-->
     <div class="col-md-6 col-sm-6 col-xm-12">
@@ -12,7 +12,7 @@
 
             <div class="card-heading">
                 <h4 class="card-title inline-block pdd-top-5">Videos</h4>
-                <a href="" class="btn btn-default pull-right no-mrg">All Videos</a>
+                <a href="<?php echo base_url('welcome/video'); ?>" class="btn btn-default pull-right no-mrg">All Videos</a>
             </div>
 
 
@@ -86,7 +86,7 @@
 
             <div class="card-heading">
                 <h4 class="card-title inline-block pdd-top-5">Photos</h4>
-                <a href="" class="btn btn-default pull-right no-mrg">All Photos</a>
+                <a href="<?php echo base_url('welcome/image'); ?>" class="btn btn-default pull-right no-mrg">All Photos</a>
             </div>
 
             <a href="<?php echo base_url(); ?>assets/images/others/BUP-Campus.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="gallery-item" data-size="700x1000">
@@ -153,7 +153,7 @@
         <div class="card">
             <div class="card-heading">
                 <h4 class="card-title inline-block pdd-top-5">Audios</h4>
-                <a href="" class="btn btn-default pull-right no-mrg">All Audios</a>
+                <a href="<?php echo base_url('welcome/audio'); ?>" class="btn btn-default pull-right no-mrg">All Audios</a>
             </div>
             <div class="pdd-horizon-20 pdd-vertical-5 mrg-btm-30">
                 <div class="overflow-y-auto relative scrollable" style="max-height: 381px">
@@ -251,7 +251,7 @@
         <div class="card">
             <div class="card-heading">
                 <h4 class="card-title inline-block pdd-top-5">Documents </h4>
-                <a href="" class="btn btn-default pull-right no-mrg">All Documents</a>
+                <a href="<?php echo base_url('welcome/documents'); ?>" class="btn btn-default pull-right no-mrg">All Documents</a>
             </div>
             <div class="pdd-horizon-20 pdd-vertical-5 mrg-btm-30">
                 <div class="overflow-y-auto relative scrollable" style="max-height: 381px">
@@ -274,7 +274,7 @@
                             </td>
                             <td>
                                 <div class="relative mrg-top-0">
-                                    <a href="#" class="">View</a>
+                                    <a href="#" class="" data-toggle="modal" data-target="#modal-document">View</a>
                                 </div>
                             </td>
                         </tr>
@@ -414,9 +414,6 @@
         </div>
     </div>
 
-
-
-
 </div>
 
 <style>
@@ -480,6 +477,33 @@
 
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-document">
+    <div class="modal-dialog modal-document" role="document">
+        <div class="modal-content">
+            <object type="application/pdf" class="modal-lg" data="<?php echo base_url(); ?>assets/documents/tasklist.pdf" height="550"></object>
+
+            <div class="modal-body">
+
+                <div class="padding-15">
+
+<!--                    <div class="row">-->
+<!--                        <div class="col-md-12">-->
+<!---->
+<!--                            <h4 class="card-title mrg-btm-30">Information This Audio File</h4>-->
+<!--                            <ul class="list arrow bullet-danger">-->
+<!--                                <li>Upload By Admin</li>-->
+<!--                                <li>Uploaded 2-2-2018</li>-->
+<!--                                <li>Category : BUP EVENT</li>-->
+<!--                            </ul>-->
+<!---->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

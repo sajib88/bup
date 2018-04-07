@@ -22,6 +22,14 @@
     font-weight: 500;
 }
 
+.wt-200{
+    font-weight: 200;
+}
+
+.wt-100{
+    font-weight: 100;
+}
+
 .wd-auto{
     width: auto;
 }
@@ -46,6 +54,16 @@
     width: auto;
     height: 150px;
 }
+
+/*BORDER*/
+.border-bottom{
+    border-bottom: 1px solid #f2f4f8;
+}
+
+.border-bottom a:hover{
+    /*border-bottom: 1px solid #0f9aee;*/
+}
+
 /*PADDING*/
 .pdd-top-btm-70{
     padding:70px 0;
@@ -66,6 +84,14 @@
 
 .pdd-rt-10{
     padding-right: 10px;
+}
+
+.pdd-bottom-9{
+    padding-bottom: 9px;
+}
+
+.pdd-bottom-6{
+    padding-bottom: 6px;
 }
 
 input[type=file] {

@@ -82,8 +82,10 @@ if (!empty($mtPageScripts)) {
 }
 
 ?>
-
-
+<!--<LocationMatch "--><?php //base_url(); ?><!--.assets/documents/tasklist.(?i:pdf)$">-->
+<!--ForceType application/pdf-->
+<!--Header set Content-Disposition inline-->
+<!--</LocationMatch>-->
 
 </body>
 

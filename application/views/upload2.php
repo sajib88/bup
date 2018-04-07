@@ -1,8 +1,7 @@
-<div class="page-title">
+
+<div class="page-title pdd-bottom-9">
     <h4>Upload Contents</h4>
 </div>
-
-
 
 <div class="row">
 
@@ -71,11 +70,10 @@
                     </div>
                     <div class="col-md-12 col-sm-12 col-xs-12 no-pdd-left no-pdd-right">
                         <div class="form-group">
-                            <label>Content Name</label>
+                            <h2><small>Content Name:</small></h2>
                             <input placeholder="Enter Content Name" class="form-control" type="text">
                         </div>
-
-                        <label>Category:</label>
+                        <h2><small>Category:</small></h2>
                         <select id="selectize-group">
                             <option value="">Select Category...</option>
                             <optgroup label="Climbing">
@@ -91,12 +89,10 @@
                                 <option value="sling">Image</option>
                             </optgroup>
                         </select>
-
-                        <label>Tagging:</label>
+                        <h2><small>Tagging:</small></h2>
                             <select id="selectize-tags-1" name="person" multiple class="item-info">
                         </select>
-
-                        <label>Events:</label>
+                        <h2><small>Events:</small></h2>
                         <select id="selectize-tags-2" name="person" multiple class="item-primary">
                             <option value="1" selected>Summer Program</option>
                             <option value="2">Winter Excursion</option>
@@ -104,7 +100,7 @@
                             <option value="4">Annual Program</option>
                         </select>
 
-                        <label>Recording Date:</label>
+                        <h2><small>Recording Date:</small></h2>
                         <div class="timepicker-input input-icon form-group">
                             <i class="ti-time"></i>
                             <input type="text" class="form-control datepicker-1" placeholder="Datepicker" data-provide="datepicker">
@@ -112,7 +108,7 @@
 
 
                         <div class="form-group row">
-                            <label for="form-1-5" class="col-md-12 col-sm-12 col-xs-12 control-label">Description</label>
+                            <h2 class="col-md-12 col-sm-12 col-xs-12"><small>Description:</small></h2>
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <textarea class="form-control" rows="2" id="form-1-5"></textarea>
                             </div>
