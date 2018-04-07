@@ -169,7 +169,7 @@
 
                             <td width="15%">
                                 <div class="relative mrg-top-0">
-                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">View</a>
+                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -184,7 +184,7 @@
 
                             <td width="15%">
                                 <div class="relative mrg-top-0">
-                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">View</a>
+                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -199,7 +199,7 @@
 
                             <td width="15%">
                                 <div class="relative mrg-top-0">
-                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">View</a>
+                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -214,7 +214,7 @@
 
                             <td width="15%">
                                 <div class="relative mrg-top-0">
-                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">View</a>
+                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -229,7 +229,7 @@
 
                             <td width="15%">
                                 <div class="relative mrg-top-0">
-                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">View</a>
+                                    <a href="#" data-toggle="modal" data-target="#modal-sound" class="btn btn-info btn-sm">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -274,7 +274,7 @@
                             </td>
                             <td>
                                 <div class="relative mrg-top-0">
-                                    <a href="#" class="" data-toggle="modal" data-target="#modal-document">View</a>
+                                    <a href="#" class="" data-toggle="modal" data-target="#modal-document">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -298,7 +298,7 @@
                             </td>
                             <td>
                                 <div class="relative mrg-top-0">
-                                    <a href="#" class="">View</a>
+                                    <a href="#" class="" data-toggle="modal" data-target="#modal-document">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -324,7 +324,7 @@
                             </td>
                             <td>
                                 <div class="relative mrg-top-0">
-                                    <a href="#" class="">View</a>
+                                    <a href="#" class="" data-toggle="modal" data-target="#modal-document">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -350,7 +350,7 @@
                             </td>
                             <td>
                                 <div class="relative mrg-top-0">
-                                    <a href="#" class="">View</a>
+                                    <a href="#" class="" data-toggle="modal" data-target="#modal-document">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -375,7 +375,7 @@
                             </td>
                             <td>
                                 <div class="relative mrg-top-0">
-                                    <a href="#" class="">View</a>
+                                    <a href="#" class="" data-toggle="modal" data-target="#modal-document">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -400,7 +400,7 @@
                             </td>
                             <td>
                                 <div class="relative mrg-top-0">
-                                    <a href="#" class="">View</a>
+                                    <a href="#" class="" data-toggle="modal" data-target="#modal-document">Preview</a>
                                 </div>
                             </td>
                         </tr>
@@ -486,7 +486,7 @@
 <div class="modal fade" id="modal-document">
     <div class="modal-dialog modal-document" role="document">
         <div class="modal-content">
-            <object type="application/pdf" class="modal-lg" data="<?php echo base_url(); ?>assets/documents/tasklist.pdf" height="550"></object>
+            <object type="application/pdf" class="modal-lg" data="<?php echo base_url(); ?>assets/documents/tasklist.pdf" height="550"/>
 
             <div class="modal-body">
 

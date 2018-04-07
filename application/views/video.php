@@ -171,52 +171,6 @@
 </div>
 
 
-<div class="modal fade" id="modal-sound">
-    <div class="modal-dialog modal-sound" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="padding-15">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="card-title mrg-btm-30">Information This Audio File</h4>
-                            <ul class="list arrow bullet-danger">
-                                <li>Upload By Admin</li>
-                                <li>Uploaded 2-2-2018</li>
-                                <li>Category : BUP EVENT</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal modal-lg fade" id="modal-document">
-    <div class="modal-dialog modal-document" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <object type="application/pdf" class="modal-lg" data="<?php echo base_url(); ?>assets/documents/tasklist.pdf">
-                <div class="padding-15">
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <h4 class="card-title mrg-btm-30">Information This Audio File</h4>
-                            <ul class="list arrow bullet-danger">
-                                <li>Upload By Admin</li>
-                                <li>Uploaded 2-2-2018</li>
-                                <li>Category : BUP EVENT</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <script>
 
     function call_modal(file_name)
